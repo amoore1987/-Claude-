@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jen Jenivive — The Cheekiest Books on the Internet</title>
+<meta name="description" content="Cheeky humour for unserious adults. Beautifully illustrated books that look innocent from across the room — and absolutely are not. 190 million views and counting.">
+<link rel="icon" href="assets/brand/roundel.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ✦ Cheeky gate -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <div class="gate-blob gate-blob-1"></div>
+  <div class="gate-blob gate-blob-2"></div>
+  <div class="gate-blob gate-blob-3"></div>
+  <div class="gate-card">
+    <img class="gate-roundel" src="assets/brand/roundel-sm.webp" alt="Jen Jenivive" width="120" height="129">
+    <p class="script gate-eyebrow">Hold up, sunshine…</p>
+    <h2 id="gateTitle">These books <em>look</em> like children's books.<br>They are 100% <span class="hl-yellow">NOT</span> for children.</h2>
+    <p class="gate-sub">Cheeky humour for unserious adults. Are you one of those?</p>
+    <div class="gate-btns">
+      <button class="btn btn-yellow" id="gateYes">I'm a grown-up — let me in</button>
+      <a class="btn btn-ghost-purple" href="https://www.bbc.co.uk/cbeebies" rel="noopener">I'm actually a child</a>
+    </div>
+  </div>
+</div>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div class="cursor-blob" id="cursorBlob" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ✦ Header -->
+<header class="hdr" id="hdr">
+  <a class="brand" href="#top" aria-label="Jen Jenivive — back to top">
+    <img src="assets/brand/roundel-sm.webp" alt="" width="46" height="49">
+    <span class="brand-name"><span class="brand-jen">JEN</span><span class="brand-jenivive">JENIVIVE</span></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Sections">
+    <a href="#favourites">Best&nbsp;Sellers</a>
+    <a href="#library">The&nbsp;Library</a>
+    <a href="#personalised">Personalised</a>
+    <a href="#club">Book&nbsp;Club</a>
+    <a href="#merch">Merch</a>
+    <a href="#about">About&nbsp;Jen</a>
+  </nav>
+  <a class="btn btn-magenta btn-sm hdr-cta" href="https://jenjenivive.com" target="_blank" rel="noopener">Shop the books ↗</a>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+  <!-- ✦ Hero -->
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-pink"></div>
+      <div class="blob blob-lilac"></div>
+      <div class="blob blob-blue"></div>
+      <svg class="dotring dotring-1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="0.1 18" stroke-linecap="round"/></svg>
+      <svg class="dotring dotring-2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="7" stroke-dasharray="0.1 22" stroke-linecap="round"/></svg>
+      <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">✦</span><span class="spark s4">✦</span>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="script eyebrow" data-anim="fade-up">Cheeky humour for unserious adults</p>
+        <h1 id="heroTitle" data-splitletters>The <span class="hl-swipe">Cheekiest</span> Books on the Internet</h1>
+        <p class="hero-sub" data-anim="fade-up">Beautifully illustrated. Lovingly written. Absolutely filthy.
+          Books that look sweet and innocent from across the room — and very much are not.</p>
+        <div class="hero-ctas" data-anim="fade-up">
+          <a class="btn btn-yellow btn-lg" href="#favourites">Show me the books ↓</a>
+          <a class="btn btn-ghost-purple btn-lg" href="#club">Join the Book&nbsp;Club</a>
+        </div>
+        <ul class="hero-pills" data-anim="fade-up" data-stagger>
+          <li class="pill pill-pink">★★★★★ 169+ giggling reviews</li>
+          <li class="pill pill-blue">Free UK shipping over £25</li>
+          <li class="pill pill-yellow">190M+ views on TikTok</li>
+        </ul>
+      </div>
+
+      <div class="hero-stack" id="heroStack" aria-label="A few of the books">
+        <div class="hero-blob" aria-hidden="true"></div>
+        <svg class="hero-ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0.1 16" stroke-linecap="round"/></svg>
+        <!-- covers injected by JS -->
+      </div>
+    </div>
+
+    <svg class="squiggle hero-squiggle" viewBox="0 0 400 30" aria-hidden="true"><path d="M5 25 L120 8 L150 22 L180 8 L210 22 L240 8 L395 20" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </section>
+
+  <!-- ✦ Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-marquee>
+      <span>Cheeky humour for unserious adults ✦ 190 million views and counting ✦ Looks innocent. Isn't. ✦ Free UK shipping over £25 ✦ The cheekiest books on the internet ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ✦ Stats -->
+  <section class="stats" aria-label="Jen Jenivive in numbers">
+    <div class="stats-grid" data-stagger>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="190" data-suffix="M+">0</span><span class="script stat-label">views on TikTok</span></div>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="114" data-suffix="">0</span><span class="script stat-label">filthy little masterpieces</span></div>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="169" data-suffix="+">0</span><span class="script stat-label">five-star giggles</span></div>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="200" data-suffix="+">0</span><span class="script stat-label">countries shipped to</span></div>
+    </div>
+  </section>
+
+  <!-- ✦ Best sellers shelf -->
+  <section class="favourites" id="favourites" aria-label="Best sellers">
+    <header class="sec-head">
+      <p class="script sec-eyebrow" data-anim="fade-up">the nation's favourite filth</p>
+      <h2 data-anim="fade-up">The <span class="hl-marker">Best&nbsp;Sellers</span></h2>
+      <p class="sec-sub" data-anim="fade-up">Grab a book. Drag the shelf. Ruin a baby shower.</p>
+    </header>
+    <div class="shelf-wrap">
+      <div class="shelf" id="shelf" tabindex="0" aria-label="Best sellers shelf — drag to browse">
+        <!-- book cards injected by JS -->
+      </div>
+      <div class="shelf-hint" aria-hidden="true">← drag me →</div>
+    </div>
+  </section>
+
+  <!-- ✦ Library -->
+  <section class="library" id="library" aria-label="All books">
+    <header class="sec-head">
+      <p class="script sec-eyebrow" data-anim="fade-up">go on, read another one</p>
+      <h2 data-anim="fade-up">The Whole Filthy <span class="hl-marker hl-marker-blue">Library</span></h2>
+      <p class="sec-sub" data-anim="fade-up">All <span id="bookCount">114</span> of them. Gotta collect the lot.</p>
+    </header>
+    <div class="lib-controls" data-anim="fade-up">
+      <div class="chips" role="tablist" aria-label="Filter books">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="best">Best Sellers</button>
+        <button class="chip" data-filter="new">New In</button>
+        <button class="chip" data-filter="bundles">Bundles</button>
+        <button class="chip chip-shuffle" id="shuffleBtn">Shuffle!</button>
+      </div>
+      <label class="lib-search">
+        <span class="visually-hidden">Search the books</span>
+        <input type="search" id="libSearch" placeholder="Find your filth…" autocomplete="off">
+      </label>
+    </div>
+    <div class="lib-grid" id="libGrid"><!-- tiles injected by JS --></div>
+    <p class="lib-empty" id="libEmpty" hidden>Nothing that filthy… yet. Try another word.</p>
+  </section>
+
+  <!-- ✦ Personalised -->
+  <section class="personalised" id="personalised" aria-label="Personalised books">
+    <div class="pers-inner">
+      <div class="pers-copy">
+        <p class="script sec-eyebrow" data-anim="fade-up">the gift they'll never live down</p>
+        <h2 data-anim="fade-up">Stick <span class="hl-marker hl-marker-yellow">their name</span> on it</h2>
+        <div class="slot" data-anim="fade-up" aria-live="off">
+          <div class="slot-mask"><span class="slot-word" id="slotWord">Fiona's Fanny</span></div>
+        </div>
+        <p class="sec-sub" data-anim="fade-up">Nine gloriously personalisable titles. Swap the name, keep the smut,
+          and become the undisputed champion of Secret Santa. Forever.</p>
+        <a class="btn btn-magenta btn-lg" data-anim="fade-up" href="https://jenjenivive.com/pages/personalised-books" target="_blank" rel="noopener">Personalise one ↗</a>
+      </div>
+      <div class="pers-deck" id="persDeck" aria-label="Personalised book covers"><!-- injected --></div>
+    </div>
+  </section>
+
+  <!-- ✦ Book club -->
+  <section class="club" id="club" aria-label="Book club">
+    <div class="club-inner">
+      <div class="club-parcel" id="clubParcel" aria-hidden="true">
+        <div class="parcel-book"><img id="clubBookImg" src="" alt=""></div>
+        <div class="parcel-box">
+          <div class="parcel-flap"></div>
+          <div class="parcel-front"><span class="script">to: you, obviously</span></div>
+        </div>
+      </div>
+      <div class="club-copy">
+        <p class="script sec-eyebrow" data-anim="fade-up">first rule: giggle about it</p>
+        <h2 data-anim="fade-up">The Jen Jenivive <span class="hl-marker">Book&nbsp;Club</span></h2>
+        <p class="sec-sub" data-anim="fade-up">A brand-new cheeky book lands on your doormat every single month.
+          Your postie will judge you. Your mates will be jealous. Worth it.</p>
+        <p class="club-price" data-anim="fade-up"><span class="script">from</span> <strong id="clubPrice">£12.99</strong> <span class="script">a month</span></p>
+        <a class="btn btn-yellow btn-lg" data-anim="fade-up" href="https://jenjenivive.com/products/jen-jenivive-book-club-2" target="_blank" rel="noopener">Join the club ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ Merch -->
+  <section class="merch" id="merch" aria-label="Merchandise">
+    <header class="sec-head">
+      <p class="script sec-eyebrow" data-anim="fade-up">wear the filth · sip the smut</p>
+      <h2 data-anim="fade-up">The <span class="hl-marker hl-marker-blue">Merch</span></h2>
+      <p class="sec-sub" data-anim="fade-up">Mugs and tees for people whose favourite craft is scissoring.</p>
+    </header>
+    <div class="line-wrap">
+      <svg class="clothesline" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12 Q 600 58 1200 12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+      <div class="line-items" id="merchLine"><!-- injected --></div>
+    </div>
+    <div class="merch-cta"><a class="btn btn-ghost-purple" data-anim="fade-up" href="https://jenjenivive.com/pages/merchandise" target="_blank" rel="noopener">See all the merch ↗</a></div>
+  </section>
+
+  <!-- ✦ About -->
+  <section class="about" id="about" aria-label="About Jen">
+    <div class="about-inner">
+      <div class="about-visual" data-anim="pop">
+        <svg class="about-ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="0.1 14" stroke-linecap="round"/></svg>
+        <img class="about-roundel" src="assets/brand/roundel.webp" alt="Illustrated portrait of Jen Jenivive" width="340" height="366">
+        <span class="about-spark" aria-hidden="true">✦</span>
+      </div>
+      <div class="about-copy">
+        <p class="script sec-eyebrow" data-anim="fade-up">who is this menace?</p>
+        <h2 data-anim="fade-up">Meet <span class="hl-marker">Jen</span></h2>
+        <p data-anim="fade-up">Jen Jenivive is a UK author of beautifully illustrated books for grown-ups who never
+          quite grew up. What started as one very silly idea is now a full-blown library of innuendo with
+          <strong>190&nbsp;million views and counting</strong> — read aloud, badly, at hen dos, birthdays and
+          book clubs across 200+ countries.</p>
+        <blockquote class="about-quote" data-anim="fade-up"><p class="script">“They might look like children's books, but they are definitely just for adults!”</p></blockquote>
+        <ul class="socials" data-anim="fade-up" data-stagger aria-label="Follow Jen">
+          <li><a class="social-chip" href="https://www.tiktok.com/@jenjenivivereads" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a class="social-chip" href="https://www.instagram.com/jenjenivive" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a class="social-chip" href="https://www.facebook.com/JenJenivive" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a class="social-chip" href="https://www.youtube.com/@jenjenivive" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a class="social-chip" href="https://x.com/jenjenivive" target="_blank" rel="noopener">X</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ Reviews -->
+  <section class="reviews" aria-label="Reviews">
+    <header class="sec-head">
+      <p class="script sec-eyebrow" data-anim="fade-up">real reviews, real humans</p>
+      <h2 data-anim="fade-up">The <span class="hl-marker hl-marker-yellow">Fan&nbsp;Mail</span></h2>
+      <p class="sec-sub" data-anim="fade-up">169 reviews and counting. Customers speak for us — loudly, at parties.</p>
+    </header>
+    <div class="bubbles" id="bubbles" data-stagger><!-- injected --></div>
+  </section>
+
+  <!-- ✦ Reverse marquee -->
+  <div class="marquee marquee-alt" aria-hidden="true">
+    <div class="marquee-track" data-marquee data-marquee-reverse>
+      <span>Warning: may cause snorting in public ✦ Gift them. Regret nothing. ✦ Reads like a bedtime story. Isn't one. ✦ 20% off your first order when you sign up ✦&nbsp;</span>
+    </div>
+  </div>
+</main>
+
+<!-- ✦ Footer -->
+<footer class="footer">
+  <div class="footer-blob footer-blob-1" aria-hidden="true"></div>
+  <div class="footer-blob footer-blob-2" aria-hidden="true"></div>
+  <div class="footer-cta">
+    <p class="script footer-script" data-anim="fade-up">go on, treat yourself…</p>
+    <h2 data-anim="fade-up">Your bookshelf could be <em>so</em> much funnier.</h2>
+    <div data-anim="fade-up">
+      <a class="btn btn-yellow btn-lg" href="https://jenjenivive.com" target="_blank" rel="noopener">Shop jenjenivive.com ↗</a>
+      <p class="footer-note">Sign up to the newsletter over there and bag <strong>20% off</strong> your first order.</p>
+    </div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col footer-brand-col">
+      <img class="footer-wordmark" src="assets/brand/wordmark.webp" alt="Jen Jenivive" width="200" height="55">
+      <p class="script">cheeky humour for unserious adults</p>
+    </div>
+    <nav class="footer-col" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="https://jenjenivive.com/collections/all-my-books" target="_blank" rel="noopener">All the books</a>
+      <a href="https://jenjenivive.com/collections/best-sellers" target="_blank" rel="noopener">Best sellers</a>
+      <a href="https://jenjenivive.com/collections/latest-released-books" target="_blank" rel="noopener">New arrivals</a>
+      <a href="https://jenjenivive.com/pages/personalised-books" target="_blank" rel="noopener">Personalised books</a>
+      <a href="https://jenjenivive.com/pages/merchandise" target="_blank" rel="noopener">Merchandise</a>
+    </nav>
+    <nav class="footer-col" aria-label="Say hello">
+      <h3>Say hello</h3>
+      <a href="mailto:Tilly@jenjenivive.com">Tilly@jenjenivive.com</a>
+      <a href="https://jenjenivive.com/pages/contact" target="_blank" rel="noopener">Contact</a>
+      <a href="https://jenjenivive.com/pages/wholesale" target="_blank" rel="noopener">Wholesale</a>
+    </nav>
+    <nav class="footer-col" aria-label="Follow">
+      <h3>Follow the filth</h3>
+      <a href="https://www.tiktok.com/@jenjenivivereads" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.instagram.com/jenjenivive" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/JenJenivive" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/@jenjenivive" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+  </div>
+  <p class="footer-fine">© Jen Jenivive. All books, artwork and questionable puns belong to Jen.
+    This page is a concept redesign of <a href="https://jenjenivive.com" target="_blank" rel="noopener">jenjenivive.com</a> — made with love, and innuendo.</p>
+</footer>
+
+<script src="js/books-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
