@@ -34,7 +34,7 @@
 <!-- ✦ Header -->
 <header class="hdr" id="hdr">
   <a class="brand" href="#top" aria-label="Jen Jenivive — back to top">
-    <img src="assets/brand/roundel-sm.webp" alt="" width="46" height="49">
+    <img class="brand-avatar" src="assets/brand/roundel-mini.webp" alt="" width="46" height="46">
     <span class="brand-name"><span class="brand-jen">JEN</span><span class="brand-jenivive">JENIVIVE</span></span>
   </a>
   <nav class="nav" id="nav" aria-label="Sections">
@@ -46,7 +46,7 @@
     <a href="#about">About&nbsp;Jen</a>
   </nav>
   <a class="btn btn-magenta btn-sm hdr-cta" href="https://jenjenivive.com" target="_blank" rel="noopener">Shop the books ↗</a>
-  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
 </header>
 
 <main id="top">
@@ -65,21 +65,21 @@
     <div class="hero-inner">
       <div class="hero-copy">
         <p class="script eyebrow" data-anim="fade-up">Cheeky humour for unserious adults</p>
-        <h1 id="heroTitle" data-splitletters>The <span class="hl-swipe">Cheekiest</span> Books on the Internet</h1>
-        <p class="hero-sub" data-anim="fade-up">Beautifully illustrated. Lovingly written. Absolutely filthy.
+        <h1 id="heroTitle" tabindex="-1" data-splitletters>The <span class="hl-swipe">Cheekiest</span> Books on the Internet</h1>
+        <p class="hero-sub" data-anim="fade-up">Beautifully illustrated. Lovingly written. Entirely inappropriate.
           Books that look sweet and innocent from across the room — and very much are not.</p>
         <div class="hero-ctas" data-anim="fade-up">
           <a class="btn btn-yellow btn-lg" href="#favourites">Show me the books ↓</a>
           <a class="btn btn-ghost-purple btn-lg" href="#club">Join the Book&nbsp;Club</a>
         </div>
         <ul class="hero-pills" data-anim="fade-up" data-stagger>
-          <li class="pill pill-pink">★★★★★ 169+ giggling reviews</li>
+          <li class="pill pill-pink">★ 169 giggling reviews</li>
           <li class="pill pill-blue">Free UK shipping over £25</li>
           <li class="pill pill-yellow">190M+ views on TikTok</li>
         </ul>
       </div>
 
-      <div class="hero-stack" id="heroStack" aria-label="A few of the books">
+      <div class="hero-stack" id="heroStack" role="group" aria-label="A few of the books">
         <div class="hero-blob" aria-hidden="true"></div>
         <svg class="hero-ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0.1 16" stroke-linecap="round"/></svg>
         <!-- covers injected by JS -->
@@ -99,22 +99,22 @@
   <!-- ✦ Stats -->
   <section class="stats" aria-label="Jen Jenivive in numbers">
     <div class="stats-grid" data-stagger>
-      <div class="stat" data-anim="pop"><span class="stat-num" data-count="190" data-suffix="M+">0</span><span class="script stat-label">views on TikTok</span></div>
-      <div class="stat" data-anim="pop"><span class="stat-num" data-count="114" data-suffix="">0</span><span class="script stat-label">filthy little masterpieces</span></div>
-      <div class="stat" data-anim="pop"><span class="stat-num" data-count="169" data-suffix="+">0</span><span class="script stat-label">five-star giggles</span></div>
-      <div class="stat" data-anim="pop"><span class="stat-num" data-count="200" data-suffix="+">0</span><span class="script stat-label">countries shipped to</span></div>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="190" data-suffix="M+">190M+</span><span class="script stat-label">views on TikTok</span></div>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="114" data-suffix="">114</span><span class="script stat-label">cheeky little masterpieces</span></div>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="169" data-suffix="">169</span><span class="script stat-label">giggling reviews</span></div>
+      <div class="stat" data-anim="pop"><span class="stat-num" data-count="9" data-suffix="">9</span><span class="script stat-label">books you can put a name on</span></div>
     </div>
   </section>
 
   <!-- ✦ Best sellers shelf -->
   <section class="favourites" id="favourites" aria-label="Best sellers">
     <header class="sec-head">
-      <p class="script sec-eyebrow" data-anim="fade-up">the nation's favourite filth</p>
+      <p class="script sec-eyebrow" data-anim="fade-up">the ones everyone giggles about</p>
       <h2 data-anim="fade-up">The <span class="hl-marker">Best&nbsp;Sellers</span></h2>
       <p class="sec-sub" data-anim="fade-up">Grab a book. Drag the shelf. Ruin a baby shower.</p>
     </header>
     <div class="shelf-wrap">
-      <div class="shelf" id="shelf" tabindex="0" aria-label="Best sellers shelf — drag to browse">
+      <div class="shelf" id="shelf" tabindex="0" role="region" aria-label="Best sellers — scroll with arrow keys or drag">
         <!-- book cards injected by JS -->
       </div>
       <div class="shelf-hint" aria-hidden="true">← drag me →</div>
@@ -129,20 +129,21 @@
       <p class="sec-sub" data-anim="fade-up">All <span id="bookCount">114</span> of them. Gotta collect the lot.</p>
     </header>
     <div class="lib-controls" data-anim="fade-up">
-      <div class="chips" role="tablist" aria-label="Filter books">
-        <button class="chip is-active" data-filter="all">All</button>
-        <button class="chip" data-filter="best">Best Sellers</button>
-        <button class="chip" data-filter="new">New In</button>
-        <button class="chip" data-filter="bundles">Bundles</button>
+      <div class="chips" role="group" aria-label="Filter books">
+        <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="best" aria-pressed="false">Best Sellers</button>
+        <button class="chip" data-filter="new" aria-pressed="false">New In</button>
+        <button class="chip" data-filter="bundles" aria-pressed="false">Bundles</button>
         <button class="chip chip-shuffle" id="shuffleBtn">Shuffle!</button>
       </div>
       <label class="lib-search">
         <span class="visually-hidden">Search the books</span>
-        <input type="search" id="libSearch" placeholder="Find your filth…" autocomplete="off">
+        <input type="search" id="libSearch" placeholder="Looking for something…?" autocomplete="off">
       </label>
     </div>
     <div class="lib-grid" id="libGrid"><!-- tiles injected by JS --></div>
-    <p class="lib-empty" id="libEmpty" hidden>Nothing that filthy… yet. Try another word.</p>
+    <p class="visually-hidden" id="libStatus" role="status"></p>
+    <p class="lib-empty" id="libEmpty" hidden>Nothing by that name… yet. Try another word.</p>
   </section>
 
   <!-- ✦ Personalised -->
@@ -154,11 +155,11 @@
         <div class="slot" data-anim="fade-up" aria-live="off">
           <div class="slot-mask"><span class="slot-word" id="slotWord">Fiona's Fanny</span></div>
         </div>
-        <p class="sec-sub" data-anim="fade-up">Nine gloriously personalisable titles. Swap the name, keep the smut,
+        <p class="sec-sub" data-anim="fade-up">Nine gloriously personalisable titles. Swap the name, keep the innuendo,
           and become the undisputed champion of Secret Santa. Forever.</p>
         <a class="btn btn-magenta btn-lg" data-anim="fade-up" href="https://jenjenivive.com/pages/personalised-books" target="_blank" rel="noopener">Personalise one ↗</a>
       </div>
-      <div class="pers-deck" id="persDeck" aria-label="Personalised book covers"><!-- injected --></div>
+      <div class="pers-deck" id="persDeck" role="group" aria-label="Personalised book covers"><!-- injected --></div>
     </div>
   </section>
 
@@ -177,7 +178,7 @@
         <h2 data-anim="fade-up">The Jen Jenivive <span class="hl-marker">Book&nbsp;Club</span></h2>
         <p class="sec-sub" data-anim="fade-up">A brand-new cheeky book lands on your doormat every single month.
           Your postie will judge you. Your mates will be jealous. Worth it.</p>
-        <p class="club-price" data-anim="fade-up"><span class="script">from</span> <strong id="clubPrice">£12.99</strong> <span class="script">a month</span></p>
+        <p class="club-price" data-anim="fade-up"><span class="script">from</span> <strong id="clubPrice">£9.99</strong> <span class="script">a month</span></p>
         <a class="btn btn-yellow btn-lg" data-anim="fade-up" href="https://jenjenivive.com/products/jen-jenivive-book-club-2" target="_blank" rel="noopener">Join the club ↗</a>
       </div>
     </div>
@@ -186,7 +187,7 @@
   <!-- ✦ Merch -->
   <section class="merch" id="merch" aria-label="Merchandise">
     <header class="sec-head">
-      <p class="script sec-eyebrow" data-anim="fade-up">wear the filth · sip the smut</p>
+      <p class="script sec-eyebrow" data-anim="fade-up">wear it · sip it · explain nothing</p>
       <h2 data-anim="fade-up">The <span class="hl-marker hl-marker-blue">Merch</span></h2>
       <p class="sec-sub" data-anim="fade-up">Mugs and tees for people whose favourite craft is scissoring.</p>
     </header>
@@ -211,7 +212,7 @@
         <p data-anim="fade-up">Jen Jenivive is a UK author of beautifully illustrated books for grown-ups who never
           quite grew up. What started as one very silly idea is now a full-blown library of innuendo with
           <strong>190&nbsp;million views and counting</strong> — read aloud, badly, at hen dos, birthdays and
-          book clubs across 200+ countries.</p>
+          book clubs around the world.</p>
         <blockquote class="about-quote" data-anim="fade-up"><p class="script">“They might look like children's books, but they are definitely just for adults!”</p></blockquote>
         <ul class="socials" data-anim="fade-up" data-stagger aria-label="Follow Jen">
           <li><a class="social-chip" href="https://www.tiktok.com/@jenjenivivereads" target="_blank" rel="noopener">TikTok</a></li>
@@ -237,7 +238,7 @@
   <!-- ✦ Reverse marquee -->
   <div class="marquee marquee-alt" aria-hidden="true">
     <div class="marquee-track" data-marquee data-marquee-reverse>
-      <span>Warning: may cause snorting in public ✦ Gift them. Regret nothing. ✦ Reads like a bedtime story. Isn't one. ✦ 20% off your first order when you sign up ✦&nbsp;</span>
+      <span>Warning: may cause snorting in public ✦ Gift them. Regret nothing. ✦ Reads like a bedtime story. Isn't one. ✦ Sign up for Jen&#8217;s latest book news ✦&nbsp;</span>
     </div>
   </div>
 </main>
@@ -251,7 +252,7 @@
     <h2 data-anim="fade-up">Your bookshelf could be <em>so</em> much funnier.</h2>
     <div data-anim="fade-up">
       <a class="btn btn-yellow btn-lg" href="https://jenjenivive.com" target="_blank" rel="noopener">Shop jenjenivive.com ↗</a>
-      <p class="footer-note">Sign up to the newsletter over there and bag <strong>20% off</strong> your first order.</p>
+      <p class="footer-note">Sign up to the newsletter over there for <strong>Jen&#8217;s latest book news</strong> (and the occasional treat).</p>
     </div>
   </div>
   <div class="footer-cols">
@@ -274,7 +275,7 @@
       <a href="https://jenjenivive.com/pages/wholesale" target="_blank" rel="noopener">Wholesale</a>
     </nav>
     <nav class="footer-col" aria-label="Follow">
-      <h3>Follow the filth</h3>
+      <h3>Follow Jen</h3>
       <a href="https://www.tiktok.com/@jenjenivivereads" target="_blank" rel="noopener">TikTok</a>
       <a href="https://www.instagram.com/jenjenivive" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/JenJenivive" target="_blank" rel="noopener">Facebook</a>

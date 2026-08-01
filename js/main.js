@@ -25,16 +25,27 @@
   var gate = document.getElementById('gate');
   var seen = false;
   try { seen = sessionStorage.getItem('jj-adult') === 'yes'; } catch (e) {}
+  var gateYes = document.getElementById('gateYes');
   if (seen) {
     gate.classList.add('is-open');
   } else {
     document.body.style.overflow = 'hidden';
+    setTimeout(function () { gateYes.focus(); }, 100);
+    gate.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab') return;
+      var focusables = gate.querySelectorAll('button, a[href]');
+      var first = focusables[0], last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
   }
-  document.getElementById('gateYes').addEventListener('click', function () {
+  gateYes.addEventListener('click', function () {
     try { sessionStorage.setItem('jj-adult', 'yes'); } catch (e) {}
     confettiBurst();
     gate.classList.add('is-open');
     document.body.style.overflow = '';
+    var h1 = document.getElementById('heroTitle');
+    if (h1) h1.focus({ preventScroll: true });
   });
 
   /* ---------- confetti ---------- */
@@ -115,16 +126,20 @@
   /* ---------- mobile nav ---------- */
   var burger = document.getElementById('burger');
   var nav = document.getElementById('nav');
-  burger.addEventListener('click', function () {
-    var open = nav.classList.toggle('is-open');
+  function setNav(open) {
+    nav.classList.toggle('is-open', open);
     burger.setAttribute('aria-expanded', open);
     burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) { var f = nav.querySelector('a'); if (f) f.focus(); }
+    else burger.focus();
+  }
+  burger.addEventListener('click', function () { setNav(!nav.classList.contains('is-open')); });
   nav.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      nav.classList.remove('is-open');
-      burger.setAttribute('aria-expanded', 'false');
-    }
+    if (e.target.tagName === 'A') setNav(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) setNav(false);
   });
 
   /* ---------- split letters (hero h1) ---------- */
@@ -176,7 +191,7 @@
     a.href = productUrl(b.h);
     a.target = '_blank'; a.rel = 'noopener';
     a.style.cssText = '--w:' + b.w + '%; --r:' + b.r + 'deg; --dur:' + b.dur + 's; --del:' + b.del + 's;' +
-      'left:' + b.x + '%; top:' + b.y + '%; z-index:' + (idx === 0 ? 5 : 3) + ';';
+      'left:' + b.x + '%; top:' + b.y + '%; --z:' + (idx === 0 ? 5 : 3) + ';';
     a.dataset.depth = b.depth;
     a.innerHTML = '<img src="' + coverSrc(b.h) + '" alt="' + esc(book.t) + '" width="' + book.w + '" height="' + book.ht + '" loading="eager">';
     stack.appendChild(a);
@@ -200,6 +215,7 @@
         b.style.marginLeft = (-cmx * d * 26) + 'px';
         b.style.marginTop = (-cmy * d * 20) + 'px';
       });
+      if (Math.abs(pmx - cmx) < 0.001 && Math.abs(pmy - cmy) < 0.001) { parallaxOn = false; return; }
       requestAnimationFrame(parallaxTick);
     }
   }
@@ -233,6 +249,7 @@
       cio.unobserve(en.target);
       var n = en.target, target = +n.dataset.count, suffix = n.dataset.suffix || '';
       if (prefersReduced) { n.textContent = target + suffix; return; }
+      n.textContent = '0' + suffix;
       var t0 = null;
       (function step(ts) {
         if (!t0) t0 = ts;
@@ -280,17 +297,22 @@
       vel = e.clientX - lastX; lastX = e.clientX;
       shelf.scrollLeft = startLeft - (e.clientX - startX);
     }, { passive: true });
-    addEventListener('pointerup', function () {
+    function endDrag(withMomentum) {
       if (!isDown) return;
       isDown = false;
       shelf.classList.remove('is-dragging');
+      if (!withMomentum) return;
       (function momentum() {
         if (Math.abs(vel) < 0.4) return;
         shelf.scrollLeft -= vel;
         vel *= 0.94;
         momentumId = requestAnimationFrame(momentum);
       })();
-    });
+    }
+    addEventListener('pointerup', function () { endDrag(true); });
+    addEventListener('pointercancel', function () { endDrag(false); });
+    shelf.addEventListener('lostpointercapture', function () { endDrag(false); });
+    shelf.addEventListener('dragstart', function (e) { e.preventDefault(); });
     // suppress accidental link clicks after a drag
     shelf.addEventListener('click', function (e) {
       if (Math.abs(lastX - startX) > 6) { e.preventDefault(); e.stopPropagation(); }
@@ -336,6 +358,10 @@
     }
     grid.innerHTML = '';
     libEmpty.hidden = items.length > 0;
+    var status = document.getElementById('libStatus');
+    if (status) status.textContent = items.length
+      ? items.length + (items.length === 1 ? ' book shown' : ' books shown')
+      : 'No books match — try another word';
     items.forEach(function (b, i) {
       var t = el('a', 'tile');
       t.href = productUrl(b.h); t.target = '_blank'; t.rel = 'noopener';
@@ -358,8 +384,12 @@
 
   document.querySelectorAll('.chip[data-filter]').forEach(function (chip) {
     chip.addEventListener('click', function () {
-      document.querySelectorAll('.chip[data-filter]').forEach(function (c) { c.classList.remove('is-active'); });
+      document.querySelectorAll('.chip[data-filter]').forEach(function (c) {
+        c.classList.remove('is-active');
+        c.setAttribute('aria-pressed', 'false');
+      });
       chip.classList.add('is-active');
+      chip.setAttribute('aria-pressed', 'true');
       currentFilter = chip.dataset.filter;
       renderLibrary();
     });
@@ -447,9 +477,9 @@
     var b = el('article', 'bubble');
     b.setAttribute('data-anim', 'pop');
     var stars = '';
-    for (var i = 0; i < 5; i++) stars += '<span style="--i:' + i + '">★</span>';
+    for (var i = 0; i < 5; i++) stars += '<span style="--i:' + i + '" aria-hidden="true">★</span>';
     b.innerHTML =
-      '<div class="bubble-stars" aria-label="5 out of 5 stars">' + stars + '</div>' +
+      '<div class="bubble-stars" role="img" aria-label="5 out of 5 stars">' + stars + '</div>' +
       '<p class="bubble-q">“' + esc(r.q) + '”</p>' +
       '<div class="bubble-meta"><span class="bubble-name">' + esc(r.n) + '</span>' +
       '<span class="bubble-book">' + esc(r.b) + '</span></div>';

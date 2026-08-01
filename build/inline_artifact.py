@@ -59,7 +59,7 @@ img_js = "window.JJ_IMG = " + json.dumps(covers) + ";\n"
 # favicon: use the small webp instead of the 440KB png
 html = html.replace('href="assets/brand/roundel.png" type="image/png"',
                     'href="' + file_b64("assets/brand/roundel-sm.webp", "image/webp") + '" type="image/webp"')
-for brand in ["roundel-sm.webp", "roundel.webp", "wordmark.webp"]:
+for brand in ["roundel-sm.webp", "roundel-mini.webp", "roundel.webp", "wordmark.webp"]:
     html = html.replace("assets/brand/" + brand, file_b64("assets/brand/" + brand, "image/webp"))
 
 # ---- stitch ----
