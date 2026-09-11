@@ -131,6 +131,7 @@ def render_video_segment(
     ]
     maps = ["-map", "[v]"]
 
+    tail: list[str] = []
     if p.has_audio and not mute:
         chain.append(
             f"[0:a]atrim=0:{max_seconds},asetpts=PTS-STARTPTS,"
@@ -138,12 +139,17 @@ def render_video_segment(
         )
         maps += ["-map", "[a]"]
     else:
+        # The silent track is generated at full target length because we do not
+        # know the source duration inside the filter graph. -shortest then ends
+        # the output with the video, so a 5s clip does not become 20s of frozen
+        # frame with silence running underneath it.
         args += ["-f", "lavfi", "-t", str(max_seconds), "-i",
                  "anullsrc=channel_layout=stereo:sample_rate=48000"]
         maps += ["-map", "2:a"]
+        tail = ["-shortest"]
 
     _run([*args, "-filter_complex", ";".join(chain), *maps,
-          "-t", str(max_seconds), *VCODEC, *ACODEC, str(dest)])
+          "-t", str(max_seconds), *VCODEC, *ACODEC, *tail, str(dest)])
 
 
 def render_still_segment(

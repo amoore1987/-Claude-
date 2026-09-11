@@ -75,7 +75,7 @@ def _fit_lines(
 
 
 def _rounded_band(
-    draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], colour: str, alpha: int = 235
+    draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], colour: str, alpha: int = 242
 ) -> None:
     draw.rounded_rectangle(box, radius=28, fill=_hex(colour, alpha))
 
@@ -125,7 +125,7 @@ def title_overlay(title: str, accent: str, caption: str | None = None) -> Image.
         draw,
         (int((WIDTH - tag_w) / 2) - 32, tag_y, int((WIDTH + tag_w) / 2) + 32, tag_y + 66),
         PURPLE,
-        225,
+        238,
     )
     draw.text(((WIDTH - tag_w) / 2, tag_y + 12), tag, font=tag_fnt, fill=_hex("#FFFFFF"))
 
