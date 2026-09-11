@@ -1,0 +1,3 @@
+# Products already published on the channel — the pipeline skips these.
+my-beaver-loves-wood
+coming

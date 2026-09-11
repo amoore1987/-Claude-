@@ -1,3 +1,8 @@
 node_modules/
 *.pyc
 __pycache__/
+
+# Shorts pipeline
+shorts/out/
+shorts/client_secret.json
+shorts/.token.json
