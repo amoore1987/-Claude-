@@ -1,118 +1,103 @@
-# Shop by Occasion — collection spec
+# Shop by Occasion — live collection layer
 
-A search-acquisition layer for jenjenivive.com. **This sits underneath the existing
-"shop by mood" browse, it does not replace it.** The two do different jobs:
+**Status: the six collections in this spec are CREATED and LIVE on jenjenivive.com
+as of 2026-09-12.** This directory is now the record of what was built and why,
+plus the follow-ups that were deliberately not done.
 
-| | Shop by mood | Shop by occasion |
-| --- | --- | --- |
-| Who it serves | Someone already on the site | Someone on Google who has never heard of Jen |
-| Job | Help them pick → raises AOV | Win the click → brings new traffic |
-| Organised by | Vibe / theme | What the buyer types before they buy |
-| Success metric | Products per order | Non-brand organic sessions |
+## What the live audit found (and what it corrected)
 
-Mood is merchandising. Occasion is distribution. A mood page can't rank for
-*"funny vasectomy gift"* because nothing on it — URL, title tag, H1, body copy —
-matches the phrase. That's the gap these 18 collections fill.
+This spec was originally written against `js/books-data.js` — a 114-book scrape
+that is out of date. Pulling the live store changed two conclusions:
 
-## Why this is the highest-ROI change available
+**1. The occasion layer was already half-built.** The store has 35 collections:
+a 12-strong mood layer (`mood-*`) *and* a search-facing occasion layer
+(`funny-gifts-for-dad`, `funny-gifts-for-mum`, `funny-halloween-books`,
+`lgbtq-funny-books`, `rude-stocking-fillers`,
+`adult-books-that-look-like-childrens-books`). Most of what a generic occasion
+audit would recommend already existed.
 
-Every acquisition channel the brand has today is **rented**. TikTok (~197K),
-Instagram (~161K) and TikTok Shop all run on someone else's algorithm and can be
-throttled overnight. Organic search is the only channel that is **owned**, compounds
-over time, and reaches buyers at the exact moment they have a wallet open and a
-problem ("what do I get him for the snip").
+**2. There was no SEO to fix.** Every storefront collection already carries a
+hand-written SEO title and meta description — the mood collections included.
+`mood-hen-do` is already titled *"Hen Party Books – Funny Adult Gifts for the
+Bride"*; `mood-hormones` is *"Funny Menopause Books – Cheeky Adult Gifts for
+Women"*. Display name and SEO title were already correctly decoupled, which is
+exactly the right pattern. The only collections with null SEO are
+`discount-eligible`, `new-arrivals-discountable` and
+`for-shopify-performance-tracking` — internal utility collections that should
+stay unindexed. **No SEO changes were made.**
 
-The catalogue is already sitting on that demand — 114 books organised by anatomy,
-which is the one thing nobody searches for. Reorganising by occasion costs nothing
-but collection setup.
+What remained genuinely missing across all 35 collections: six gift occasions
+with real UK search demand and books already in the catalogue to fill them.
 
-Secondary benefit: it fixes choice paralysis. A buyer landing on *Vasectomy Gifts*
-sees 11 books, not 114.
+## The six collections created
+
+| Collection | URL | Products | Target query | Trade safe |
+| --- | --- | ---: | --- | --- |
+| Vasectomy Gifts | `/collections/funny-vasectomy-gifts` | 13 | funny vasectomy gift | ✅ |
+| Divorce & Break-Up Gifts | `/collections/funny-divorce-and-breakup-gifts` | 6 | funny divorce gift | ✅ |
+| New Baby & Baby Shower | `/collections/inappropriate-baby-shower-gifts` | 5 | inappropriate baby shower gift | ❌ |
+| Retirement Gifts | `/collections/funny-retirement-gifts` | 6 | funny retirement gift | ✅ |
+| Valentine's Day | `/collections/rude-valentines-gifts` | 7 | rude valentines gift | ❌ |
+| Body Confidence | `/collections/body-confidence-funny-books` | 8 | funny body positive gift | ❌ |
+
+45 product placements. Each was created with an SEO title, meta description and
+intro copy in brand voice, sorted by best-selling.
+
+**Trade safe** flags sets a mainstream gift-shop buyer or a workplace Secret
+Santa can be shown. Three of the six qualify.
 
 ## Files
 
 | File | Use |
 | --- | --- |
-| `build_occasions.py` | Source of truth. Edit the `OCCASIONS` list, re-run to regenerate. |
-| `occasion-collections.json` | Full spec incl. every product per collection |
-| `occasion-collections.csv` | One row per collection — collection setup + SEO fields |
-| `collection-products.csv` | One row per collection/product pair — bulk assignment |
-
-Regenerate with:
+| `build_occasions.py` | Source of truth. Edit `OCCASIONS`, re-run to regenerate. |
+| `live-catalogue.json` | 120 ACTIVE `product_type:Book` titles → product GIDs, pulled 2026-09-12 |
+| `occasion-collections.json` | Full spec including every product GID per collection |
+| `occasion-collections.csv` | One row per collection with SEO fields |
+| `collection-products.csv` | One row per collection/product pair |
 
 ```bash
 python3 research/occasions/build_occasions.py
 ```
 
-The build **fails** on an unknown product handle, a duplicate collection handle, an
-over-length meta title/description, or a collection with no products — so the spec
-can't drift from the catalogue silently.
+The build **fails** on a handle missing from the live catalogue, a duplicate
+collection handle, an over-length meta title/description, or an empty
+collection — so the spec can't drift from the catalogue silently. Refresh
+`live-catalogue.json` from the Admin API before re-running after new titles ship.
 
-## The 18 collections
+## Still to do
 
-| Collection | Target query | Products | Trade safe |
-| --- | --- | ---: | --- |
-| Vasectomy Gifts | funny vasectomy gift | 11 | ✅ |
-| Hen Party Gifts | funny hen party gifts | 12 | ❌ |
-| Menopause Gifts | funny menopause gift | 6 | ✅ |
-| Secret Santa Under £15 | secret santa gifts under £15 | 12 | ✅ |
-| Christmas Gifts | funny christmas gifts for adults | 9 | ❌ |
-| Father's Day & Dad | funny fathers day gift | 8 | ✅ |
-| Mother's Day & Mum | funny mothers day gift | 7 | ❌ |
-| Milestone Birthdays | funny 40th birthday gift | 6 | ❌ |
-| Pride & LGBTQ+ | funny lgbtq gifts | 9 | ❌ |
-| Divorce & Break-Up | funny divorce gift | 6 | ✅ |
-| New Baby & Baby Shower | inappropriate baby shower gift | 5 | ❌ |
-| Retirement Gifts | funny retirement gift | 6 | ✅ |
-| Anniversary & Couples | rude anniversary gift | 8 | ❌ |
-| Valentine's Day | rude valentines gift | 7 | ❌ |
-| Body Confidence | funny body positive gift | 7 | ❌ |
-| Hobbies & Occupations | funny gardener gift | 8 | ✅ |
-| Stocking Fillers Under £10 | funny stocking fillers under £10 | 6 | ❌ |
-| Put Their Name On It | personalised rude gift | 9 | ❌ |
+**1. Verify Online Store publication.** The API token used here lacks
+`read_product_listings`, so publication status could not be confirmed. Check in
+Shopify admin that all six are published to the Online Store channel before
+expecting them to rank.
 
-**Trade safe** flags the sets that can be shown to mainstream gift-shop buyers and
-used for workplace Secret Santa. Seven of the eighteen qualify — that's the
-starting shortlist for the wholesale conversation, and it means the wholesale range
-already exists without commissioning anything new.
+**2. Add the new titles to existing collections.** Three books live in the
+catalogue but are not in any collection this spec created. They belong in
+existing curated collections, which is an editorial call:
 
-## Titles deliberately left out
+| Title | Suggested home |
+| --- | --- |
+| `the-bloody-fairy-godmother` | `mood-hormones` (period humour) |
+| `the-newlywed-survival-guide` | `mood-hen-do` / `mood-couples` |
+| `ive-always-wanted-a-bbc-the-search-for-a-big-black-cock` | `mood-couples` |
 
-86 of 114 books land in at least one occasion. The other 28 are the pure-innuendo
-titles with no gifting hook — *Fisting*, *Squirting*, *The Glorious Hole*, the
-*Who Will…?* series and so on. That is the correct result, not a gap: those titles
-are **mood-layer inventory**. They convert on browse and on TikTok, not on search
-intent, and forcing them into an occasion page would dilute the page for the
-titles that do convert there.
+**3. Internal linking.** New collections need links from the footer and from
+relevant product pages, not only a nav dropdown. They also need adding to the
+sitemap with indexing requested.
 
-Two follow-ups worth doing separately:
+**4. Personalisation cross-sell.** Several £12.99 books are the base versions of
+£24.99 personalised titles (`fionas-fanny`, `taras-taco`, `beths-smelly-beaver`,
+`wendys-wobblers`, `bens-baguette`, `kelly-s-kebab`, `simons-sword`,
+`evans-eggplant`, `jakes-wiener-has-lice-a-day-in-the-life-of-a-vet`). Each base
+product page should carry a "put your own name on it, £24.99" block. That is a
+2x price upgrade on traffic that already exists, and it is the single highest-
+margin change left in this area.
 
-1. **Series pages.** Six of the orphans are the *Who Will…?* series and several
-   others are sequels (*Helen's Hole* / *Helen's Hole Refilled*, *Ron's Rocket* ×2).
-   Series collections capture "book 2" and sequel searches and drive multi-buy.
-2. **Personalisation cross-sell.** Several orphans (*Fiona's Fanny*, *Tara's Taco*,
-   *Beth's Smelly Beaver*) are the £12.99 base versions of £24.99 personalised
-   titles. They're kept out of *Put Their Name On It* on purpose so that page
-   converts at the higher price — but each base product page should carry a
-   "put your own name on it, £24.99" block. That's a margin upgrade on traffic
-   that already exists.
-
-## Implementation notes
-
-- **Manual collections, not automated rules.** These are editorial groupings; a tag
-  rule will get them wrong.
-- **Put the intro copy above the product grid.** A collection page with no body text
-  will not rank. The `intro` field is written for that slot, in brand voice.
-- **One collection per URL, permanently.** Don't reuse a seasonal handle for a
-  different occasion next year — it throws away the ranking.
-- **Seasonal pages stay live year-round.** Christmas and Valentine's pages need to
-  be indexed and aged *before* the season; taking them down resets them.
-- **Internal links matter.** Link the occasion pages from the footer and from
-  relevant product pages, not only from a nav dropdown.
-- **Add these to the sitemap and request indexing** once the copy is live.
+**5. Leave seasonal pages up year-round.** Valentine's needs to be indexed and
+aged before February. Taking it down after the season resets it.
 
 ## What to measure
 
-Non-brand organic sessions, and organic revenue per collection. Ignore rankings as
-a headline metric. Give it 8–12 weeks before judging — search compounds slowly and
-then all at once.
+Non-brand organic sessions and organic revenue per collection. Ignore rankings as
+a headline metric. Give it 8–12 weeks — search compounds slowly, then suddenly.
