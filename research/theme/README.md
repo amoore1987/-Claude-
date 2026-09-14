@@ -83,12 +83,22 @@ published. Verified against 3.5's `templates/product.json` after the write.
 3. **Check a normal book** (e.g. `/products/fisting`) still shows three cards with
    working Add buttons and the unchanged mobile layout.
 
+## Description links (store-level — done 2026-09-14)
+
+All nine base books now end their description with the same block the original six
+used, so the fallback text link is consistent across the set and works on the
+published theme today, independent of 3.6:
+
+```html
+<p>Want to personalise this book? <a href="/products/customised-XXX">Find the Customised version here.</a></p>
+```
+
+Added to `fionas-fanny`, `taras-taco` and `wendys-wobblers`. Descriptions were
+re-read immediately before writing and the existing copy left byte-identical — only
+the paragraph above was appended.
+
 ## Still outstanding
 
-- **Three base books have no description link** to their personalised twin —
-  `fionas-fanny`, `taras-taco`, `wendys-wobblers`. The other six do. Not done here
-  because it is a live product-description edit, outside the dupe. Low risk, worth
-  doing for consistency as a fallback for anyone on an old cached page.
 - **The nine personalised books have no `pairs_with` of their own**, so the section
   added to `product.sold-on-store.json` is inert on their pages until populated.
   Best filled with other personalised titles — cross-selling within the £24.99 tier
