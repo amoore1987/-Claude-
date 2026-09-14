@@ -1,0 +1,96 @@
+{%- comment -%}
+  JJ "Pairs well with": books that real customers bought alongside this one.
+  Source: product.metafields.custom.pairs_with (list.product_reference), set from 12 months of order data.
+  Hides itself when the metafield is empty. Uses Dawn's <product-form> so Add buttons open the cart drawer without a reload.
+
+  PERSONALISATION GUARD
+  The personalised editions capture the buyer's name through a form injected on their own product page
+  (Live Product Options app embed). This section builds its own minimal add-to-cart form containing only
+  the variant id, so adding one straight to the bag from here would create a paid order with no name on
+  it. Any paired product whose template_suffix matches section.settings.personalise_template is therefore
+  rendered as a link through to its product page instead of an Add button.
+{%- endcomment -%}
+{{ 'jj-pairs.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- assign pairs = product.metafields.custom.pairs_with.value -%}
+{%- assign eligible = 0 -%}
+{%- if pairs != blank -%}
+  {%- for p in pairs -%}
+    {%- if p.available and p.id != product.id -%}
+      {%- assign eligible = eligible | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if eligible > section.settings.max_items -%}
+    {%- assign eligible = section.settings.max_items -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if eligible > 0 -%}
+<div class="jj-pairs page-width" id="jj-pairs-{{ section.id }}">
+  <div class="jj-pairs__head">
+    {%- if section.settings.eyebrow != blank -%}<p class="jj-pairs__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2 class="jj-pairs__heading">{{ section.settings.heading }}</h2>
+    {%- if section.settings.subheading != blank -%}<p class="jj-pairs__sub">{{ section.settings.subheading }}</p>{%- endif -%}
+  </div>
+  <ul class="jj-pairs__grid{% if eligible == 4 %} jj-pairs__grid--four{% endif %}" role="list">
+    {%- assign shown = 0 -%}
+    {%- for p in pairs -%}
+      {%- if shown >= section.settings.max_items -%}{%- break -%}{%- endif -%}
+      {%- if p.available and p.id != product.id -%}
+        {%- assign shown = shown | plus: 1 -%}
+        {%- assign v = p.selected_or_first_available_variant -%}
+        {%- assign form_id = 'jj-pairs-' | append: section.id | append: '-' | append: p.id -%}
+        {%- assign is_personalised = false -%}
+        {%- if section.settings.personalise_template != blank and p.template_suffix == section.settings.personalise_template -%}
+          {%- assign is_personalised = true -%}
+        {%- endif -%}
+        <li class="jj-pairs__card">
+          <a class="jj-pairs__media" href="{{ p.url }}" aria-label="{{ p.title | escape }}">
+            {%- if p.featured_image -%}
+              {{ p.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', widths: '190, 280, 400', sizes: '(min-width: 750px) 190px, 40vw', alt: p.featured_image.alt | default: p.title }}
+            {%- endif -%}
+          </a>
+          <div class="jj-pairs__body">
+            <a class="jj-pairs__title" href="{{ p.url }}">{{ p.title | escape }}</a>
+            <span class="jj-pairs__price">{{ v.price | money }}</span>
+            {%- if is_personalised -%}
+              <a class="jj-pairs__btn jj-pairs__btn--link" href="{{ p.url }}" aria-label="{{ section.settings.personalise_label | escape }}: {{ p.title | escape }}">
+                <span>{{ section.settings.personalise_label }}</span>
+              </a>
+            {%- else -%}
+              <product-form data-section-id="{{ section.id }}" data-hide-errors="true">
+                {%- form 'product', p, id: form_id, class: 'jj-pairs__form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                  <input type="hidden" name="id" value="{{ v.id }}" class="product-variant-id">
+                  <button type="submit" name="add" class="jj-pairs__btn" aria-label="{{ section.settings.button_label | escape }}: {{ p.title | escape }}">
+                    <span>{{ section.settings.button_label }}</span>
+                    {%- render 'loading-spinner' -%}
+                  </button>
+                {%- endform -%}
+              </product-form>
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+  {%- if section.settings.note != blank -%}<p class="jj-pairs__note">{{ section.settings.note }}</p>{%- endif -%}
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "JJ Pairs well with",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Readers also grabbed" },
+    { "type": "inline_richtext", "id": "heading", "label": "Heading", "default": "Pairs well with <em>this one</em>" },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Real pairings from real orders." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Add to bag" },
+    { "type": "text", "id": "personalise_label", "label": "Personalised edition button label", "default": "Personalise it" },
+    { "type": "text", "id": "personalise_template", "label": "Personalised product template suffix", "info": "Paired products using this product-template suffix link to their own page instead of adding straight to the bag, so the customer can still enter the name. Leave blank to disable the guard.", "default": "sold-on-store" },
+    { "type": "text", "id": "note", "label": "Note under the cards", "default": "Free delivery over £25 to the UK, Europe and USA, or £40 worldwide." },
+    { "type": "range", "id": "max_items", "label": "Books to show", "min": 1, "max": 4, "step": 1, "default": 3 }
+  ],
+  "presets": [ { "name": "JJ Pairs well with" } ]
+}
+{% endschema %}

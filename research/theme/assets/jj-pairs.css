@@ -1,0 +1,66 @@
+/* JJ "Pairs well with" (product page) + cart drawer upsell. Namespaced .jj-pairs / .jj-cup. px units, Dawn root is 62.5%. */
+.jj-pairs{padding:36px 0 8px}
+.jj-pairs__head{text-align:center;margin:0 0 22px}
+.jj-pairs__eyebrow{font-family:"Borel",cursive;font-size:18px;line-height:2;color:#CD3A8E;margin:0}
+.jj-pairs__heading{font:900 28px/1.15 "Libre Franklin",sans-serif;color:#4E217A;margin:0 0 8px}
+.jj-pairs__heading em{font-style:normal;background-image:linear-gradient(104deg,rgba(250,179,248,0) 1%,rgba(250,179,248,.95) 3%,rgba(250,179,248,.85) 97%,rgba(250,179,248,0) 99%);background-repeat:no-repeat;background-size:100% 62%;background-position:0 68%;padding:0 4px}
+.jj-pairs__sub{font:500 15px/1.6 "Montserrat",sans-serif;color:#4E217A;margin:0;opacity:.85}
+.jj-pairs__grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.jj-pairs__grid--four{grid-template-columns:repeat(2,1fr)}
+.jj-pairs__card{background:#fff;border:2px solid #4E217A;border-radius:14px;padding:12px 10px 14px;text-align:center;display:flex;flex-direction:column}
+.jj-pairs__media{display:block}
+.jj-pairs__media img{width:100%;max-width:190px;height:auto;border-radius:8px;transform:rotate(-2deg);box-shadow:0 8px 18px rgba(78,33,122,.2);transition:transform .2s ease}
+.jj-pairs__card:hover .jj-pairs__media img{transform:rotate(0) translateY(-3px)}
+.jj-pairs__title{display:block;margin:12px 0 4px;font:700 14px/1.3 "Libre Franklin",sans-serif;color:#4E217A;text-decoration:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.jj-pairs__title:hover{text-decoration:underline}
+.jj-pairs__price{display:block;font:800 15px/1 "Montserrat",sans-serif;color:#4E217A;margin:0 0 10px}
+.jj-pairs__form{margin:auto 0 0}
+.jj-pairs__btn{position:relative;width:100%;padding:11px 10px;border-radius:999px;background:#CD3A8E;color:#fff;font:800 13px/1 "Libre Franklin",sans-serif;border:2px solid #4E217A;box-shadow:0 3px 0 #4E217A;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+.jj-pairs__btn:hover{transform:translateY(-1px);box-shadow:0 4px 0 #4E217A}
+.jj-pairs__btn[aria-disabled="true"]{opacity:.7}
+.jj-pairs__btn.loading>span{visibility:hidden}
+.jj-pairs__btn .loading__spinner{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.jj-pairs__btn .loading__spinner.hidden{display:none}
+.jj-pairs__btn .loading__spinner svg{width:16px;height:16px}
+.jj-pairs__btn .path{stroke:#fff}
+/* Personalised editions link through to their own page so the name field is not bypassed. */
+.jj-pairs__btn--link{margin:auto 0 0;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none;background:#4E217A;color:#FDDD0F}
+.jj-pairs__btn--link:hover,.jj-pairs__btn--link:focus{color:#FDDD0F;text-decoration:none}
+.jj-pairs__note{text-align:center;font:500 13px/1.5 "Montserrat",sans-serif;color:#4E217A;opacity:.8;margin:14px 0 0}
+@media screen and (min-width:750px){
+  .jj-pairs{padding:52px 0 12px}
+  .jj-pairs__heading{font-size:34px}
+  .jj-pairs__grid{gap:20px;max-width:860px;margin:0 auto}
+  .jj-pairs__grid--four{grid-template-columns:repeat(4,1fr);max-width:1040px}
+  .jj-pairs__card{padding:18px 16px 18px}
+  .jj-pairs__title{font-size:16px}
+  .jj-pairs__btn{font-size:14px;padding:12px 14px}
+}
+@media screen and (max-width:479px){
+  .jj-pairs__grid{grid-template-columns:1fr 1fr}
+  .jj-pairs__grid:not(.jj-pairs__grid--four) .jj-pairs__card:nth-child(3){grid-column:1 / -1;flex-direction:row;align-items:center;text-align:left;gap:12px}
+  .jj-pairs__grid:not(.jj-pairs__grid--four) .jj-pairs__card:nth-child(3) .jj-pairs__media img{max-width:90px}
+  .jj-pairs__grid:not(.jj-pairs__grid--four) .jj-pairs__card:nth-child(3) .jj-pairs__body{flex:1}
+}
+/* cart drawer / cart page upsell */
+.jj-cup{margin:14px 0 6px;padding:14px 14px 10px;background:#FFF7FE;border:2px dashed #CD3A8E;border-radius:14px}
+.jj-cup__h{font:800 14px/1.3 "Libre Franklin",sans-serif;color:#4E217A;margin:0 0 2px}
+.jj-cup__sub{font:500 12px/1.5 "Montserrat",sans-serif;color:#4E217A;opacity:.85;margin:0 0 10px}
+.jj-cup__list{list-style:none;margin:0;padding:0}
+.jj-cup__row{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid rgba(78,33,122,.12)}
+.jj-cup__row:first-child{border-top:0}
+.jj-cup__img{flex:0 0 46px;width:46px;height:46px;border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 3px 8px rgba(78,33,122,.18)}
+.jj-cup__img img{width:100%;height:100%;object-fit:cover;display:block}
+.jj-cup__info{flex:1;min-width:0}
+.jj-cup__title{display:block;font:700 13px/1.25 "Libre Franklin",sans-serif;color:#4E217A;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.jj-cup__title:hover{text-decoration:underline}
+.jj-cup__price{font:700 12px/1 "Montserrat",sans-serif;color:#4E217A;margin-top:3px;display:block}
+.jj-cup__form{margin:0;flex:0 0 auto}
+.jj-cup__btn{position:relative;padding:8px 14px;border-radius:999px;background:#CD3A8E;color:#fff;font:800 12px/1 "Libre Franklin",sans-serif;border:2px solid #4E217A;box-shadow:0 2px 0 #4E217A;cursor:pointer;white-space:nowrap}
+.jj-cup__btn:hover{transform:translateY(-1px);box-shadow:0 3px 0 #4E217A}
+.jj-cup__btn.loading>span{visibility:hidden}
+.jj-cup__btn .loading__spinner{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.jj-cup__btn .loading__spinner.hidden{display:none}
+.jj-cup__btn .loading__spinner svg{width:14px;height:14px}
+.jj-cup__btn .path{stroke:#fff}
+.jj-cup--page{max-width:560px;margin:0 auto 30px}
