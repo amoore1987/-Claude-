@@ -21,13 +21,16 @@ body {
     #fffaf5;
   overflow: hidden;
 }
-.page::before { /* rainbow frame */
-  content: ""; position: absolute; inset: 4mm; border-radius: 9mm;
-  border: 2.2mm solid transparent;
-  background: linear-gradient(120deg,#ff3e8a,#ff9a1f,#f2b705,#10b96e,#2f7bea,#9b5de5,#ff3e8a) border-box;
-  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor; mask-composite: exclude;
-}
+.frame { position: absolute; inset: 4mm; border-radius: 9mm; padding: 2.2mm;
+  background: linear-gradient(120deg,#ff3e8a,#ff9a1f,#f2b705,#10b96e,#2f7bea,#9b5de5,#ff3e8a); }
+.frame > div { width: 100%; height: 100%; border-radius: 7mm;
+  background:
+    radial-gradient(circle at 12% 6%, #ffe3f1 0 22%, transparent 23%),
+    radial-gradient(circle at 92% 12%, #e4dcff 0 18%, transparent 19%),
+    radial-gradient(circle at 85% 96%, #d9f7ea 0 20%, transparent 21%),
+    radial-gradient(circle at 6% 92%, #fff1cc 0 18%, transparent 19%),
+    #fffaf5; }
+header, table, footer { position: relative; }
 
 header { position: relative; text-align: center; height: 42mm; padding-top: 3mm; }
 .hello { font-family: "Pacifico", cursive; font-size: 15mm; line-height: 1.25;
@@ -66,7 +69,7 @@ footer { position: absolute; left: 9mm; right: 9mm; bottom: 9mm; text-align: cen
 .fence { font-size: 5.5mm; letter-spacing: 1mm; margin-top: 1mm; }
 </style></head>
 <body>
-<div class="page">
+<div class="page"><div class="frame"><div></div></div>
   <header>
     <div class="horse-l">🐎</div><div class="horse-r">🐎</div>
     <div class="hello">Olivia's Timetable</div>
