@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Olivia's Timetable – Card</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+@page { size: A4 portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 210mm; height: 297mm; font-family: "Fredoka", sans-serif; color: #3a2340;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #fff; }
+.sheet { padding: 12mm 0; display: flex; flex-direction: column; align-items: center; gap: 10mm; }
+.howto { width: 171.2mm; font-size: 3.3mm; line-height: 1.45; color: #6b4a33; background: #fff6e8;
+  border: .4mm solid #f0d9b8; border-radius: 3mm; padding: 3mm 4mm; }
+.howto b { color: #ff3e8a; }
+.pair { display: flex; outline: .25mm dashed #999; outline-offset: 0; position: relative; }
+.pair::after { content: "✂"; position: absolute; left: -5mm; top: -3mm; font-size: 4mm; color: #999; }
+.fold { position: absolute; left: 85.6mm; top: -4mm; bottom: -4mm; border-left: .25mm dotted #bbb; }
+.fold::before { content: "fold"; position: absolute; top: -3.5mm; left: -2.5mm; font-size: 2.4mm; color: #aaa; }
+
+.card { width: 85.6mm; height: 54mm; overflow: hidden; position: relative; }
+/* FRONT: the timetable */
+.front { background: #fffaf5; padding: 1.6mm 1.8mm; display: flex; flex-direction: column; }
+.front .top { display: flex; align-items: center; justify-content: space-between; height: 5.4mm; margin-bottom: .6mm; }
+.front .ttl { font-family: "Pacifico", cursive; font-size: 4mm; line-height: 1;
+  background: linear-gradient(90deg,#ff3e8a,#9b5de5,#2f7bea); -webkit-background-clip: text; color: transparent; }
+.front .tag { font-size: 2.3mm; font-weight: 600; background: #ffd84d; border-radius: 1.5mm; padding: .2mm 1.4mm; }
+.grid { display: grid; grid-template-columns: 3.2mm repeat(5, 1fr); grid-template-rows: 3.6mm repeat(5, 1fr);
+  gap: .55mm; flex: 1; }
+.dh { color: #fff; font-size: 2.4mm; font-weight: 700; border-radius: 1mm; display: grid; place-items: center; }
+.pl { font-size: 2.4mm; font-weight: 700; color: #7a4a2a; display: grid; place-items: center; }
+.c { border-radius: 1.1mm; color: #fff; display: flex; flex-direction: column; justify-content: center;
+  align-items: center; line-height: 1.05; }
+.c .n { font-size: 2.35mm; font-weight: 700; white-space: nowrap; }
+.c .r { font-size: 1.85mm; font-weight: 600; background: #fff; color: #3a2340; border-radius: .7mm; padding: 0 .6mm; margin-top: .25mm; }
+.front .foot { font-size: 1.9mm; text-align: center; color: #7a4a2a; margin-top: .7mm; font-weight: 500; }
+
+/* BACK: horse cover */
+.back { background: linear-gradient(135deg,#ff7eb6 0%,#b77dff 50%,#6fa8ff 100%); color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.back .big { font-size: 17mm; line-height: 1; filter: drop-shadow(0 .8mm 0 rgba(0,0,0,.15)); }
+.back .name { font-family: "Pacifico", cursive; font-size: 7.2mm; line-height: 1.2; text-shadow: 0 .5mm 0 rgba(0,0,0,.15); }
+.back .form { font-size: 2.8mm; font-weight: 600; background: rgba(255,255,255,.25); border-radius: 2mm; padding: .3mm 2.4mm; margin-top: .6mm; }
+.back .dec { position: absolute; font-size: 4.5mm; }
+</style></head>
+<body>
+<div class="sheet">
+  <div class="howto">
+    <b>How to make the card:</b> print at <b>100% / “Actual size”</b> (not “Fit to page”) so it comes out exactly bank-card size (85.6 × 54 mm).
+    Cut round the dashed outline, fold along the dotted line so the pictures face out, and glue or laminate. Two spares included! 🐴
+  </div>
+  <div id="pairs" style="display:contents"></div>
+</div>
+<script src="data.js"></script>
+<script>
+const dayCol = ["#ff3e8a","#ff9a1f","#10b96e","#2f7bea","#9b5de5"];
+function front() {
+  let g = '<div></div>' + DAYS.map((d,i)=>`<div class="dh" style="background:${dayCol[i]}">${d}</div>`).join('');
+  for (let pi = 1; pi <= 5; pi++) {
+    g += `<div class="pl">${pi}</div>`;
+    DAYS.forEach(d => {
+      const [sub, , room] = TT[d][pi], s = SUBJECTS[sub];
+      g += `<div class="c" style="background:${s.color}"><span class="n">${s.short}</span><span class="r">${room || '👟 kit'}</span></div>`;
+    });
+  }
+  return `<div class="card front"><div class="top"><span class="ttl">Olivia's Timetable</span><span class="tag">7C 🐴</span></div>
+    <div class="grid">${g}</div>
+    <div class="foot">🐴 Reg 7C (AGB): Mon · Tue · Wed · Fri morning &amp; Thu end of day</div></div>`;
+}
+function back() {
+  return `<div class="card back">
+    <span class="dec" style="left:3mm;top:2.5mm">🌸</span><span class="dec" style="right:3mm;top:2.5mm">🥕</span>
+    <span class="dec" style="left:3mm;bottom:2.5mm">🌈</span><span class="dec" style="right:3mm;bottom:2.5mm">⭐</span>
+    <div class="big">🐴</div><div class="name">Olivia Moore</div><div class="form">Year 7 · 7C · 2026/27</div></div>`;
+}
+document.getElementById('pairs').innerHTML =
+  [1,2,3].map(()=>`<div class="pair">${front()}${back()}<div class="fold"></div></div>`).join('');
+</script>
+</body></html>

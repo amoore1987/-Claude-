@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Olivia's Timetable – A4</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+@page { size: A4 portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 210mm; height: 297mm; }
+body {
+  font-family: "Fredoka", sans-serif; color: #3a2340;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  background: #fff;
+}
+.page {
+  position: relative; width: 210mm; height: 297mm; padding: 9mm 9mm 8mm;
+  background:
+    radial-gradient(circle at 12% 8%, #ffe3f1 0 22%, transparent 23%),
+    radial-gradient(circle at 92% 14%, #e4dcff 0 18%, transparent 19%),
+    radial-gradient(circle at 85% 96%, #d9f7ea 0 20%, transparent 21%),
+    radial-gradient(circle at 6% 92%, #fff1cc 0 18%, transparent 19%),
+    #fffaf5;
+  overflow: hidden;
+}
+.page::before { /* rainbow frame */
+  content: ""; position: absolute; inset: 4mm; border-radius: 9mm;
+  border: 2.2mm solid transparent;
+  background: linear-gradient(120deg,#ff3e8a,#ff9a1f,#f2b705,#10b96e,#2f7bea,#9b5de5,#ff3e8a) border-box;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+
+header { position: relative; text-align: center; height: 42mm; padding-top: 3mm; }
+.hello { font-family: "Pacifico", cursive; font-size: 15mm; line-height: 1.25;
+  background: linear-gradient(90deg,#ff3e8a,#9b5de5 50%,#2f7bea); -webkit-background-clip: text; color: transparent; }
+.sub { font-size: 5.6mm; font-weight: 600; letter-spacing: .4mm; color: #7a4a2a; margin-top: 1mm; }
+.sub span { background: #ffd84d; border-radius: 3mm; padding: .4mm 3mm; color: #3a2340; }
+.horse-l, .horse-r { position: absolute; top: 7mm; font-size: 24mm; }
+.horse-l { left: 6mm; transform: scaleX(-1) rotate(-6deg); }
+.horse-r { right: 6mm; transform: rotate(-6deg); }
+
+table { width: 100%; border-collapse: separate; border-spacing: 1.6mm; table-layout: fixed; }
+col.lab { width: 13mm; }
+th.day { height: 11mm; border-radius: 4mm 4mm 1.5mm 1.5mm; color: #fff; font-size: 6mm; font-weight: 700;
+  text-shadow: 0 .4mm 0 rgba(0,0,0,.15); }
+th.p { background: #7a4a2a; color: #fff; border-radius: 3mm; font-size: 5mm; font-weight: 700; }
+th.p small { display:block; font-size: 2.6mm; font-weight: 500; opacity: .85; }
+tr.reg td, tr.reg th { height: 15mm; }
+tr.lesson td, tr.lesson th { height: 30mm; }
+td { border-radius: 3.5mm; vertical-align: middle; text-align: center; position: relative; padding: 1.2mm; }
+td.empty { background: repeating-linear-gradient(45deg,#f3e9dc 0 2mm,#fbf4ea 2mm 4mm); color: #b8966e; font-size: 3mm; }
+td.lesson { color: #fff; box-shadow: 0 .8mm 0 rgba(0,0,0,.12); }
+td .ic { font-size: 7.5mm; line-height: 1; display: block; }
+td .nm { font-size: 5mm; font-weight: 700; line-height: 1.1; margin-top: 1mm; display:block; }
+td .meta { display: flex; justify-content: center; gap: 1.2mm; margin-top: 1.4mm; font-size: 3.1mm; font-weight: 600; }
+td .meta b { background: #fff; color: #3a2340; border-radius: 2mm; padding: .2mm 1.6mm; }
+td .meta i { font-style: normal; background: rgba(255,255,255,.25); border-radius: 2mm; padding: .2mm 1.4mm; }
+tr.reg td.lesson .ic { display:inline; font-size: 5mm; vertical-align: middle; }
+tr.reg td.lesson .nm { display:inline; font-size: 4mm; vertical-align: middle; margin: 0 0 0 1mm; }
+tr.reg td.lesson .meta { margin-top: .8mm; }
+
+footer { position: absolute; left: 9mm; right: 9mm; bottom: 9mm; text-align: center; }
+.key { font-size: 3.4mm; color: #7a4a2a; margin-bottom: 2mm; }
+.key b { background:#fff; border:.3mm solid #e2cdb4; border-radius: 2mm; padding: 0 1.5mm; color:#3a2340; }
+.key i { font-style: normal; background:#b5835a; color:#fff; border-radius: 2mm; padding: 0 1.5mm; }
+.cheer { font-family: "Pacifico", cursive; font-size: 7mm; color: #ff3e8a; }
+.fence { font-size: 5.5mm; letter-spacing: 1mm; margin-top: 1mm; }
+</style></head>
+<body>
+<div class="page">
+  <header>
+    <div class="horse-l">🐎</div><div class="horse-r">🐎</div>
+    <div class="hello">Olivia's Timetable</div>
+    <div class="sub"><span>Year 7 · Form 7C</span> &nbsp;🐴&nbsp; 2026 / 27</div>
+  </header>
+  <table id="tt"></table>
+  <footer>
+    <div class="key">How to read it: &nbsp;<i>teacher</i> &nbsp;<b>room</b> &nbsp;·&nbsp; 🏇 PE days — pack your kit! &nbsp;·&nbsp; Thursday registration is at the end of the day</div>
+    <div class="cheer">Saddle up — you've got this, Olivia! 🏆</div>
+    <div class="fence">🌸 🐴 🥕 🐎 🌈 🦄 🥕 🐴 🌸</div>
+  </footer>
+</div>
+<script src="data.js"></script>
+<script>
+const t = document.getElementById("tt");
+const dayCol = ["#ff3e8a","#ff9a1f","#10b96e","#2f7bea","#9b5de5"];
+let h = '<colgroup><col class="lab">' + DAYS.map(()=>'<col>').join('') + '</colgroup>';
+h += '<tr><th></th>' + DAYS.map((d,i)=>`<th class="day" style="background:${dayCol[i]}">${d}</th>`).join('') + '</tr>';
+PERIODS.forEach((p, pi) => {
+  const isReg = p === "Reg" || p === "6";
+  h += `<tr class="${isReg ? 'reg' : 'lesson'}"><th class="p">${p === "Reg" ? '🐴<small>Reg</small>' : p}</th>`;
+  DAYS.forEach(d => {
+    const c = TT[d][pi];
+    if (!c) { h += `<td class="empty">${d === "Thu" && p === "Reg" ? "Reg is at<br>the end today" : ""}</td>`; return; }
+    const [sub, tch, room] = c, s = SUBJECTS[sub];
+    const roomTag = room ? `<b>${room}</b>` : `<b>👟 Kit</b>`;
+    const name = sub === "Registration" ? "Registration" : sub;
+    h += `<td class="lesson" style="background:${s.color}"><span class="ic">${s.icon}</span><span class="nm">${name}</span><span class="meta"><i>${tch}</i>${roomTag}</span></td>`;
+  });
+  h += '</tr>';
+});
+t.innerHTML = h;
+</script>
+</body></html>
