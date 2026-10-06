@@ -50,3 +50,9 @@ open dist/jenjenivive.html
 - Every "buy" action links to the real product page on jenjenivive.com.
 
 All books, artwork and questionable puns © Jen Jenivive. This is a concept redesign.
+
+## Mods
+
+| Path | Purpose |
+| --- | --- |
+| `mods/model-router/` | Claude Code mod that routes each prompt to the cheapest model that can handle it, when the switch beats the prompt-cache miss. Install with `/plugin install model-router --marketplace amoore1987/-Claude-`; details in its README. |

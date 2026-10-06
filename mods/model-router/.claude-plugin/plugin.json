@@ -1,0 +1,55 @@
+{
+  "name": "model-router",
+  "version": "0.1.0",
+  "description": "Routes each prompt to the cheapest model and effort that can handle it, only when the switch beats the prompt-cache miss it causes.",
+  "author": { "name": "amoore1987" },
+  "keywords": ["model", "routing", "cost", "tokens"],
+  "userConfig": {
+    "enabled": {
+      "type": "boolean",
+      "title": "Routing on",
+      "description": "Route prompts automatically. /route off and /route auto change it for one session.",
+      "default": true
+    },
+    "classifier": {
+      "type": "boolean",
+      "title": "Use the classifier",
+      "description": "Ask the light model to grade prompts the keyword rules cannot settle (one tiny call, about a tenth of a cent). Off: only obvious prompts are routed.",
+      "default": true
+    },
+    "announce": {
+      "type": "boolean",
+      "title": "Announce routes",
+      "description": "Write one dim transcript line per turn saying which model took it and the estimated cost.",
+      "default": true
+    },
+    "lightModel": {
+      "type": "string",
+      "title": "Light model",
+      "description": "Model for trivial prompts (an alias such as haiku, or a full id).",
+      "default": "claude-haiku-4-5"
+    },
+    "standardModel": {
+      "type": "string",
+      "title": "Standard model",
+      "description": "Model for ordinary, well-specified coding work (an alias such as sonnet, or a full id).",
+      "default": "claude-sonnet-5-5"
+    },
+    "cacheTtlMinutes": {
+      "type": "number",
+      "title": "Prompt cache TTL (minutes)",
+      "description": "How long the API keeps a model's prompt cache warm. 60 on most Claude Code plans, 5 in overage. Lower values make the router switch more eagerly.",
+      "default": 60,
+      "min": 1,
+      "max": 120
+    },
+    "minSavingPercent": {
+      "type": "number",
+      "title": "Minimum saving to switch (%)",
+      "description": "Only switch models when the estimated cost of the turn drops by at least this much.",
+      "default": 25,
+      "min": 0,
+      "max": 90
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "amoore1987-mods",
+  "owner": {
+    "name": "amoore1987"
+  },
+  "description": "Claude Code mods kept in this repository.",
+  "plugins": [
+    {
+      "name": "model-router",
+      "source": "./mods/model-router",
+      "description": "Routes each prompt to the cheapest model and effort that can handle it, only when the switch beats the prompt-cache miss it causes."
+    }
+  ]
+}
