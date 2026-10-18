@@ -4,6 +4,8 @@ Source: Lloyds Basic Acct statements, 01 Sep – 30 Sep 2026 and October 2026 to
 Rule used: card payments of roughly £20–£40 to the repeating disguised merchant descriptors.
 Ordinary spending (Apple, McDonalds, vapes, Three, etc.) excluded.
 
+**Lloyds gambling block was switched on for the whole period.** None of these payments were coded as gambling, which is why the block did not stop them.
+
 Two processor families appear:
 
 - **PN-prefixed, foreign currency** (PNSKNB, PNBSKNSNW, PNCRFTLNX, plus ASTRO UK which follows the same pattern): odd-pence amounts, each followed by a Lloyds NON-GBP TRANS FEE.

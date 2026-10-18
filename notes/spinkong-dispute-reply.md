@@ -12,10 +12,12 @@ None of these emails received a response, and the account was not closed. From 2
 
 My Lloyds statements show 87 card deposits to Spinkong between 21/09/2026 and 19/10/2026 totalling £2,293.15, with a further 9 deposits of £30.00 (£270.00) pending as I write. The foreign-currency deposits also cost me £45.36 in non-GBP transaction fees. Those fees arose because the payments were processed in a foreign currency under merchant names that do not identify Spinkong or gambling.
 
+I also need to draw your attention to how these deposits were taken. My bank's gambling block has been switched on throughout this period. It is designed to decline any transaction coded as gambling. Every one of these deposits bypassed it, because they were presented to my bank under merchant names such as "PNSKNB", "say esim", "Pikteron ai" and "PLPOP" rather than as gambling transactions. Spinkong and its payment processors therefore took money from a customer who had asked in writing to be excluded, through a channel designed to defeat the gambling protection on his bank account.
+
 The issue is not that I chose to play. It is that Spinkong allowed me to after I had expressly asked, in writing, to be excluded. I am therefore asking for:
 
 1. A refund of all deposits made after 20/09/2026, being £2,293.15 plus the £270.00 currently pending, together with the £45.36 in foreign transaction fees those deposits incurred.
-2. A full copy of my deposit, withdrawal and gameplay history from 20/09/2026 onwards, and your records of my emails, so the figures can be confirmed against your own data.
+2. A full copy of my deposit, withdrawal and gameplay history from 20/09/2026 onwards, your records of my emails, and the name of each payment processor and merchant descriptor used for my deposits, so the figures can be confirmed against your own data.
 3. Written confirmation that the account is now permanently closed and excluded.
 
 I would be grateful for your written response. If the matter cannot be resolved, please confirm this is your final response so I can escalate it.
