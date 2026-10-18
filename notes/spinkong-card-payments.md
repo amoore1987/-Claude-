@@ -1,68 +1,83 @@
-# Spinkong dispute – card payments
+# Spinkong dispute – card payments (verified against Lloyds statements)
 
-Source: Anthony's bank statement, descriptors are payment processors used by the site(s).
-Most lines also carry a NON-GBP TRANS FEE.
+Source: Lloyds Basic Acct statements, 01 Sep – 30 Sep 2026 and October 2026 to 19 Oct.
+Rule used: card payments of roughly £20–£40 to the repeating disguised merchant descriptors.
+Ordinary spending (Apple, McDonalds, vapes, Three, etc.) excluded.
 
-## After closure request (20/09/2026)
+Two processor families appear:
 
-| Date | Descriptor | Count | Each | Subtotal |
-|---|---|---|---|---|
-| Mon 21 Sep | PNSKNB | 7 | 25.09 | 175.63 |
-| Mon 21 Sep | PNBSKNSNW*19307017 | 1 | 25.09 | 25.09 |
-| Mon 21 Sep | CNSLTITANS | 1 | 30.00 | 30.00 |
-| Mon 21 Sep | qlnart | 2 | 25.00 | 50.00 |
-| Mon 21 Sep | say esim | 3 | 25.00 | 75.00 |
-| Mon 21 Sep | Pikteron ai | 4 | 25.00 | 100.00 |
-| Mon 21 Sep | PNSKNB*193060116 | 1 | 20.08 | 20.08 |
-| Wed 23 Sep | PNBSKNSNW*19328114 | 1 | 30.05 | 30.05 |
-| Thu 24 Sep | PNSKNB*193365074 | 1 | 29.97 | 29.97 |
-| Thu 24 Sep | PNSKNB | 5 | 24.98 | 124.90 |
-| Thu 24 Sep | PNBSKNSNW | 2 | 24.98 | 49.96 |
-| Thu 24 Sep | PNSKNB | 2 | 24.97 | 49.94 |
-| Thu 24 Sep | PNBSKNSNW*19337087 | 1 | 24.97 | 24.97 |
-| Fri 25 Sep | PNSKNB*193437028 | 1 | 24.99 | 24.99 |
-| Fri 25 Sep | PNBSKNSNW*19343767 | 1 | 24.99 | 24.99 |
-| Fri 25 Sep | PNBSKNSNW | 2 | 25.01 | 50.02 |
-| Mon 28 Sep | PNSKNB*193493581 | 1 | 20.00 | 20.00 |
-| Wed 30 Sep | PNSKNB | 2 | 25.11 | 50.22 |
-| Wed 30 Sep | PNBSKNSNW | 3 | 25.11 | 75.33 |
-| Wed 14 Oct | PNSKNB*195363506 | 1 | 30.09 | 30.09 |
-| Wed 14 Oct | PNCRFTLNX*19535776 | 1 | 30.09 | 30.09 |
-| Wed 14 Oct | PNCRFTLNX*19537700 | 1 | 30.08 | 30.08 |
-| Wed 14 Oct | PNBSKNSNW*19537025 | 1 | 30.08 | 30.08 |
-| Wed 14 Oct | PNBSKNSNW*19538018 | 1 | 30.03 | 30.03 |
-| Wed 14 Oct | PNCRFTLNX | 4 | 25.07 | 100.28 |
-| Thu 15 Oct | royallounge | 2 | 40.00 / 30.00 | 70.00 |
-| Thu 15 Oct | hword | 4 | 40 / 30 / 30 / 30 | 130.00 |
-| Fri 16 Oct | PLPOP | 1 | 30.00 | 30.00 |
-| Fri 16 Oct | hword*195572608 | 1 | 25.00 | 25.00 |
-| Mon 19 Oct | PLPOP | 6 | 30.00 | 180.00 |
-| Mon 19 Oct | PLPOP | 1 | 25.00 | 25.00 |
+- **PN-prefixed, foreign currency** (PNSKNB, PNBSKNSNW, PNCRFTLNX, plus ASTRO UK which follows the same pattern): odd-pence amounts, each followed by a Lloyds NON-GBP TRANS FEE.
+- **Round GBP** (CNSLTITANS, Pikteron ai, say esim, qlnart, modelscreator.com, hword, royallounge, PLPOP): exact £25 / £30 / £40, no fee.
 
-**Total: 65 payments, £1,741.79**
+Match both families against the Spinkong deposit history before claiming. If a family turns out to be a different site, drop it from the Spinkong claim and dispute it separately.
 
-Of which PN-prefixed processors (PNSKNB / PNBSKNSNW / PNCRFTLNX): 40 payments, £1,026.79.
-Other descriptors (CNSLTITANS, qlnart, say esim, Pikteron ai, royallounge, hword, PLPOP): 25 payments, £715.00.
-TO CONFIRM: match every line to the Spinkong cashier history before claiming it from Spinkong.
+## After closure request (from 21 Sep 2026)
 
-Pending: PLPOP x7, AEGISSKINS.COM, ROYALLOUNGE, all £30.00 = £270.00
+| Date | Descriptor | Count | Each | Subtotal | FX fees |
+|---|---|---|---|---|---|
+| Mon 21 Sep | CNSLTITANS | 1 | 30.00 | 30.00 | 0.00 |
+| Mon 21 Sep | PNBSKNSNW | 1 | 25.09 | 25.09 | 0.75 |
+| Mon 21 Sep | PNSKNB | 1 | 20.08 | 20.08 | 0.60 |
+| Mon 21 Sep | PNSKNB | 7 | 25.09 | 175.63 | 5.25 |
+| Mon 21 Sep | Pikteron ai | 5 | 25.00 | 125.00 | 0.00 |
+| Mon 21 Sep | qlnart | 2 | 25.00 | 50.00 | 0.00 |
+| Mon 21 Sep | say esim | 3 | 25.00 | 75.00 | 0.00 |
+| Wed 23 Sep | PNBSKNSNW | 1 | 30.05 | 30.05 | 0.89 |
+| Thu 24 Sep | PNBSKNSNW | 1 | 24.97 | 24.97 | 0.74 |
+| Thu 24 Sep | PNBSKNSNW | 2 | 24.98 | 49.96 | 1.48 |
+| Thu 24 Sep | PNSKNB | 1 | 19.97 | 19.97 | 0.59 |
+| Thu 24 Sep | PNSKNB | 2 | 24.97 | 49.94 | 1.48 |
+| Thu 24 Sep | PNSKNB | 6 | 24.98 | 149.88 | 4.44 |
+| Thu 24 Sep | PNSKNB | 1 | 29.97 | 29.97 | 0.89 |
+| Fri 25 Sep | ASTRO UK | 1 | 25.01 | 25.01 | 0.74 |
+| Fri 25 Sep | PNBSKNSNW | 1 | 24.99 | 24.99 | 0.74 |
+| Fri 25 Sep | PNBSKNSNW | 2 | 25.01 | 50.02 | 1.48 |
+| Fri 25 Sep | PNSKNB | 1 | 24.99 | 24.99 | 0.74 |
+| Fri 25 Sep | modelscreator.com | 1 | 25.00 | 25.00 | 0.00 |
+| Mon 28 Sep | PNSKNB | 1 | 20.00 | 20.00 | 0.59 |
+| Wed 30 Sep | PNBSKNSNW | 3 | 25.11 | 75.33 | 2.25 |
+| Wed 30 Sep | PNSKNB | 2 | 25.11 | 50.22 | 1.50 |
+| Fri 02 Oct | PNSKNB | 1 | 25.16 | 25.16 | 0.75 |
+| Mon 05 Oct | PNBSKNSNW | 1 | 25.11 | 25.11 | 0.75 |
+| Mon 05 Oct | PNSKNB | 2 | 25.10 | 50.20 | 1.50 |
+| Mon 05 Oct | PNSKNB | 1 | 25.11 | 25.11 | 0.75 |
+| Mon 12 Oct | PNBSKNSNW | 1 | 25.06 | 25.06 | 0.74 |
+| Mon 12 Oct | PNBSKNSNW | 1 | 25.08 | 25.08 | 0.74 |
+| Mon 12 Oct | PNSKNB | 1 | 25.06 | 25.06 | 0.74 |
+| Tue 13 Oct | PNBSKNSNW | 2 | 25.09 | 50.18 | 1.50 |
+| Tue 13 Oct | PNCRFTLNX | 1 | 25.06 | 25.06 | 0.74 |
+| Wed 14 Oct | PNBSKNSNW | 4 | 25.07 | 100.28 | 2.96 |
+| Wed 14 Oct | PNBSKNSNW | 1 | 30.03 | 30.03 | 0.89 |
+| Wed 14 Oct | PNBSKNSNW | 1 | 30.08 | 30.08 | 0.89 |
+| Wed 14 Oct | PNCRFTLNX | 4 | 25.07 | 100.28 | 2.96 |
+| Wed 14 Oct | PNCRFTLNX | 1 | 30.03 | 30.03 | 0.89 |
+| Wed 14 Oct | PNCRFTLNX | 1 | 30.08 | 30.08 | 0.89 |
+| Wed 14 Oct | PNCRFTLNX | 1 | 30.09 | 30.09 | 0.89 |
+| Wed 14 Oct | PNSKNB | 1 | 25.07 | 25.07 | 0.74 |
+| Wed 14 Oct | PNSKNB | 1 | 30.09 | 30.09 | 0.89 |
+| Thu 15 Oct | hword | 3 | 30.00 | 90.00 | 0.00 |
+| Thu 15 Oct | hword | 1 | 40.00 | 40.00 | 0.00 |
+| Thu 15 Oct | royallounge | 1 | 30.00 | 30.00 | 0.00 |
+| Thu 15 Oct | royallounge | 1 | 40.00 | 40.00 | 0.00 |
+| Fri 16 Oct | PLPOP | 1 | 30.00 | 30.00 | 0.00 |
+| Fri 16 Oct | hword | 1 | 25.00 | 25.00 | 0.00 |
+| Mon 19 Oct | PLPOP | 1 | 25.00 | 25.00 | 0.00 |
+| Mon 19 Oct | PLPOP | 6 | 30.00 | 180.00 | 0.00 |
+| | | **87** | | **£2,293.15** | **£45.36** |
 
-## Before closure request
+Of which:
 
-| Date | Descriptor | Count | Each |
+| Family | Payments | Amount | FX fees |
 |---|---|---|---|
-| Wed 2 Sep | PNRCNSKNS | 2 | 25.04, 25.03 |
-| Wed 2 Sep | PNSKNSTRKZN | 1 | 25.03 |
-| Wed 2 Sep | Rogue Kit | 1 | 25.02 |
-| Wed 2 Sep | transcripta.lat | 3 | 25.00 |
-| Thu 3 Sep | Rogue Kit | 2 | 24.98 |
-| Thu 3 Sep | PNSKNSTRKZN | 1 | 24.98 |
-| Tue 8 Sep | Stereo Mex | 2 | 25.00 |
-| Mon 14 Sep | CNSLTITANS | 5 | 25.00 |
-| Mon 14 Sep | ARCLOCKED GAMES | 10 | 25.00 |
-| Wed 16 Sep | CNSLTITANS | 7 | 25.00 |
-| Wed 16 Sep | say esim | 6 | 25.00 |
-| Wed 16 Sep | qlnart | 3 | 25.00 |
-| Wed 16 Sep | ARCLOCKED GAMES | 1 | 25.00 |
+| PN-prefixed / foreign currency (incl. ASTRO UK) | 60 | £1,528.15 | £45.36 |
+| Round GBP descriptors | 27 | £765.00 | £0.00 |
 
-**Total: 44 payments, £1,100.06**
+Uncertain lines, included but worth checking: ASTRO UK £25.01 (25 Sep), modelscreator.com £25.00 (25 Sep).
+
+Pending as at 19 Oct (not yet on statement): PLPOP x7, AEGISSKINS.COM, ROYALLOUNGE, all £30.00 = **£270.00**
+
+Lines in Anthony's original list that the statement did NOT show: none. Lines on the statement that the original list missed: 22 payments, £551.36 (24 Sep £19.97; 2 Oct; 5 Oct x4; 12 Oct x3; 13 Oct x3; 14 Oct a further 7; ASTRO UK; modelscreator.com; one extra Pikteron ai).
+
+## Before closure request (1–20 Sep 2026)
+
+57 payments, £1,442.18, FX fees £10.07. Includes the descriptors above plus Rogue Kit, transcripta.lat, Artirush, accuradocs.com, meshloom.net, Stereo Mex, ARCLOCKED GAMES, PNRCNSKNS, PNSKNSTRKZN, "0 engine". Not part of the self-exclusion claim, but relevant to showing the pattern of disguised merchant coding.
