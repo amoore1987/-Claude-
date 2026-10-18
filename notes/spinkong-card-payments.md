@@ -11,9 +11,23 @@ Two processor families appear:
 - **PN-prefixed, foreign currency** (PNSKNB, PNBSKNSNW, PNCRFTLNX, plus ASTRO UK which follows the same pattern): odd-pence amounts, each followed by a Lloyds NON-GBP TRANS FEE.
 - **Round GBP** (CNSLTITANS, Pikteron ai, say esim, qlnart, modelscreator.com, hword, royallounge, PLPOP): exact £25 / £30 / £40, no fee.
 
-Match both families against the Spinkong deposit history before claiming. If a family turns out to be a different site, drop it from the Spinkong claim and dispute it separately.
+Anthony confirms all descriptors are Spinkong.
 
-## After closure request (from 21 Sep 2026)
+## Between first request (13 Sep) and second request (20 Sep)
+
+| Date | Descriptor | Count | Each | Subtotal | FX fees |
+|---|---|---|---|---|---|
+| Mon 14 Sep | ARCLOCKED GAMES | 10 | 25.00 | 250.00 | 0.00 |
+| Mon 14 Sep | CNSLTITANS | 5 | 25.00 | 125.00 | 0.00 |
+| Mon 14 Sep | CNSLTITANS | 1 | 30.00 | 30.00 | 0.00 |
+| Wed 16 Sep | ARCLOCKED GAMES | 1 | 25.00 | 25.00 | 0.00 |
+| Wed 16 Sep | CNSLTITANS | 7 | 25.00 | 175.00 | 0.00 |
+| Wed 16 Sep | qlnart | 3 | 25.00 | 75.00 | 0.00 |
+| Wed 16 Sep | say esim | 6 | 25.00 | 150.00 | 0.00 |
+
+| | | **33** | | **£830.00** | **£0.00** |
+
+## After second request (from 21 Sep 2026)
 
 | Date | Descriptor | Count | Each | Subtotal | FX fees |
 |---|---|---|---|---|---|
@@ -74,12 +88,14 @@ Of which:
 | PN-prefixed / foreign currency (incl. ASTRO UK) | 60 | £1,528.15 | £45.36 |
 | Round GBP descriptors | 27 | £765.00 | £0.00 |
 
+**Grand total from 14 Sep 2026 (after the 13/09 closure request): 120 payments, £3,123.15, FX fees £45.36.**
+
 Uncertain lines, included but worth checking: ASTRO UK £25.01 (25 Sep), modelscreator.com £25.00 (25 Sep).
 
 Pending as at 19 Oct (not yet on statement): PLPOP x7, AEGISSKINS.COM, ROYALLOUNGE, all £30.00 = **£270.00**
 
 Lines in Anthony's original list that the statement did NOT show: none. Lines on the statement that the original list missed: 22 payments, £551.36 (24 Sep £19.97; 2 Oct; 5 Oct x4; 12 Oct x3; 13 Oct x3; 14 Oct a further 7; ASTRO UK; modelscreator.com; one extra Pikteron ai).
 
-## Before closure request (1–20 Sep 2026)
+## Before first closure request (1–13 Sep 2026)
 
-57 payments, £1,442.18, FX fees £10.07. Includes the descriptors above plus Rogue Kit, transcripta.lat, Artirush, accuradocs.com, meshloom.net, Stereo Mex, ARCLOCKED GAMES, PNRCNSKNS, PNSKNSTRKZN, "0 engine". Not part of the self-exclusion claim, but relevant to showing the pattern of disguised merchant coding.
+24 payments, £612.18, FX fees £10.07. Includes the descriptors above plus Rogue Kit, transcripta.lat, Artirush, accuradocs.com, meshloom.net, Stereo Mex, ARCLOCKED GAMES, PNRCNSKNS, PNSKNSTRKZN, "0 engine". Not part of the self-exclusion claim, but relevant to showing the pattern of disguised merchant coding.
