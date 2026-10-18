@@ -32,3 +32,17 @@ So the position is that I asked the operator in writing to close the account, it
 I'd like Lloyds to raise disputes for the 120 payments and the 9 pending ones once they post, refund the £45.36 in non-GBP fees, and report the merchant coding to the card scheme. If any part of this is declined, please treat it as a complaint and issue a final response so I can refer it to the Financial Ombudsman.
 
 I can provide the emails, the payment list and the statements whenever you need them.
+
+---
+
+# Reply 2 to Lloyds (Diane, debit card dispute complaints)
+
+Context: Diane says the gambling freeze was added 20/09/2026 at 08:36, so pre-20/09 transactions can't be considered. Accepted; the 14 and 16 Sep deposits (£830.00) go to Spinkong directly.
+
+Understood, thank you Diane. I'll leave the 14 and 16 September deposits out of this claim and pursue those with Spinkong directly, since they came after my written closure request on 13/09.
+
+That leaves the transactions after the freeze went on. From 21/09/2026 to 19/10/2026 there are 87 card payments totalling £2,293.15, plus £45.36 in non-GBP transaction fees charged on 60 of them. There are also 9 payments of £30.00 (£270.00) still pending, which I'd like included once they post.
+
+All of these are Spinkong deposits, and all of them went through while the gambling freeze was active because they were presented under other merchant names. On my statements they show as PNSKNB, PNBSKNSNW, PNCRFTLNX, ASTRO UK, CNSLTITANS, say esim, qlnart, Pikteron ai, modelscreator.com, hword, royallounge / ROYALLOUNGE, PLPOP and AEGISSKINS.COM.
+
+Can you confirm you'll raise disputes for those 87 transactions and the fees, and how the 9 pending ones get added when they clear? I'd also like to know the timescale and whether a temporary credit is applied while the claim is looked at. I can provide the line-by-line list, my emails to Spinkong and my statements whenever needed.
