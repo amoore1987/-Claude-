@@ -1,39 +1,34 @@
-# Reply to Lloyds dispute team
+# Reply to Lloyds dispute team (live chat version)
 
-Thank you for confirming that.
+Thanks. Yes, I need to be accurate with you on this. After I asked Spinkong to close my account it was left open, I was able to keep depositing, and those deposits were used on gambling on the site.
 
-Yes. After I asked Spinkong to close my account, the account was left open and I was able to keep depositing, and those deposits were used on gambling on the site. I want to be accurate with you about that rather than overstate it.
+One correction to the date you have. My first request to close the account was 13/09/2026, not 20/09/2026. I emailed support@spinkong.com with the subject "Account closure" asking them to close it with immediate effect. The 20/09 email was my second request, referring back to the 13/09 one and asking again for closure and a refund of deposits taken since 13/09. I chased again on 24/09 and 06/10. Spinkong never replied to any of them and never closed the account. I have all four emails with timestamps and can provide them if required.
 
-One correction to the date you have. My first request to close the account was on 13/09/2026, not 20/09/2026. I emailed support@spinkong.com with the subject "Account closure" asking them to close my account with immediate effect. The 20/09/2026 email you have was my second request, in which I referred back to the 13/09 email and asked again for closure and a refund of deposits taken since 13/09. I chased again on 24/09/2026 and 06/10/2026. Spinkong never replied to any of them and never closed the account. I'll attach all four emails.
+From my statements, the deposits taken after my 13/09 request are 120 card payments between 14/09/2026 and 19/10/2026 totalling £3,123.15, plus £45.36 in non-GBP transaction fees charged on 60 of them. A further 9 payments of £30.00 (£270.00) are still pending. I have a line-by-line list from my September and October statements and can provide it if required.
 
-From my statements, the deposits taken after my 13/09 request are:
+Spinkong processes its deposits under a range of merchant names rather than its own. On my statements the Spinkong deposits appear as:
 
-- 14/09/2026 to 19/10/2026: 120 card payments totalling £3,123.15
-- Non-GBP transaction fees charged on 60 of those: £45.36
-- Still pending as I write: 9 payments of £30.00, £270.00
+PNSKNB
+PNBSKNSNW
+PNCRFTLNX
+ASTRO UK
+CNSLTITANS
+ARCLOCKED GAMES
+say esim
+qlnart
+Pikteron ai
+modelscreator.com
+hword
+royallounge / ROYALLOUNGE
+PLPOP
+AEGISSKINS.COM
 
-I've attached a full list, line by line, taken from my September and October statements.
+The PN-prefixed ones and ASTRO UK are charged in a foreign currency and each has a non-GBP transaction fee next to it. The rest are round £25, £30 or £40 amounts in sterling.
 
-Two further points matter here. First, my gambling block on this account has been switched on throughout. None of these payments were declined because none of them were presented as gambling. They came through under merchant names such as PNSKNB, PNBSKNSNW, PNCRFTLNX, say esim, Pikteron ai, CNSLTITANS, hword, royallounge and PLPOP. All of them are Spinkong deposits. Second, Spinkong is a gambling operator and these should have been coded as gambling transactions, which would have been blocked.
+Two further points. My gambling block on this account has been switched on the whole time. None of these payments were declined because none were presented as gambling, which is why they got through. Spinkong is a gambling operator and these should have been coded as gambling transactions, in which case the block would have stopped every one of them.
 
-So the position is: I asked the operator in writing to close the account, it ignored me and carried on taking deposits, and it did so through merchant coding that got round the gambling protection on my Lloyds account.
+So the position is that I asked the operator in writing to close the account, it ignored me and kept taking deposits, and it did so through merchant coding that got round the gambling protection on my Lloyds account.
 
-I'd ask Lloyds to:
+I'd like Lloyds to raise disputes for the 120 payments and the 9 pending ones once they post, refund the £45.36 in non-GBP fees, and report the merchant coding to the card scheme. If any part of this is declined, please treat it as a complaint and issue a final response so I can refer it to the Financial Ombudsman.
 
-1. Raise disputes for the 120 payments listed and the 9 pending ones once they post, and refund the £45.36 in non-GBP fees.
-2. Report the merchant coding to the card scheme, since a gambling operator presenting transactions as e-sim, AI and gaming merchants defeats the gambling block Lloyds offers.
-3. Confirm the outcome in writing, and if any part of this is declined, treat that as a complaint and issue a final response so I can refer it to the Financial Ombudsman.
-
-I'm happy to provide anything else you need.
-
-Anthony Moore
-
----
-
-Attachments to send with this:
-- Email to support@spinkong.com, 13/09/2026, "Account closure"
-- Email, 20/09/2026, "Re: Account closure"
-- Email, 24/09/2026, "Re: Account closure"
-- Email, 06/10/2026, "Re: Account closure"
-- Payment list (notes/spinkong-card-payments.md)
-- September and October statements
+I can provide the emails, the payment list and the statements whenever you need them.
