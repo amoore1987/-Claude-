@@ -10,7 +10,7 @@ For the record, I made the request three times by email to support@spinkong.com,
 
 None of these emails received a response, and the account was not closed. From 21/09/2026 onwards the site continued to accept deposits from me and those funds were used on gambling services.
 
-My Lloyds statements show 87 card deposits to Spinkong between 21/09/2026 and 19/10/2026 totalling £2,293.15, with a further 9 deposits of £30.00 (£270.00) pending as I write. The foreign-currency deposits also cost me £45.36 in non-GBP transaction fees. Each deposit also attracted a non-GBP transaction fee from my bank, because the payments were processed in a foreign currency under merchant names that do not identify Spinkong or gambling.
+My Lloyds statements show 87 card deposits to Spinkong between 21/09/2026 and 19/10/2026 totalling £2,293.15, with a further 9 deposits of £30.00 (£270.00) pending as I write. The foreign-currency deposits also cost me £45.36 in non-GBP transaction fees. Those fees arose because the payments were processed in a foreign currency under merchant names that do not identify Spinkong or gambling.
 
 The issue is not that I chose to play. It is that Spinkong allowed me to after I had expressly asked, in writing, to be excluded. I am therefore asking for:
 
