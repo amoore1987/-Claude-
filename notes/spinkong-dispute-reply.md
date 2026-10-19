@@ -68,3 +68,13 @@ Context: Diane asked whether Spinkong ever acknowledged the emails, even automat
 No. I've checked my inbox and junk folder and there is nothing from Spinkong at all since 13/09, not even an automated acknowledgement. All four emails went to support@spinkong.com, which is the address they publish for support, and none bounced.
 
 Yes, I still have access and the account shows as open and active. Nothing has been restricted. Deposits were still being accepted on 19/10, which is why the nine payments are pending now. I've taken a screenshot of the account status today and can provide it.
+
+---
+
+# Reply 5 to Lloyds (product type and balance)
+
+Context: Diane asked what gambling product was used, and whether there was any balance, winnings or pending withdrawal on 13/09. Anthony to confirm: product type, balance on 13/09, and whether the EMU (EVENT MANAGEM) / SAMUEL MORLEY credits on the statements are Spinkong payouts.
+
+The account was an online casino account. The products available were slots and casino games, and that's what I used. There was no sports betting.
+
+When I asked for closure on 13/09 there was no remaining balance, no winnings and no pending withdrawals. The money I deposited was lost on the site. I have never withdrawn anything from Spinkong.
