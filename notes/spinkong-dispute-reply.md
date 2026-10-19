@@ -46,3 +46,15 @@ That leaves the transactions after the freeze went on. From 21/09/2026 to 19/10/
 All of these are Spinkong deposits, and all of them went through while the gambling freeze was active because they were presented under other merchant names. On my statements they show as PNSKNB, PNBSKNSNW, PNCRFTLNX, ASTRO UK, CNSLTITANS, say esim, qlnart, Pikteron ai, modelscreator.com, hword, royallounge / ROYALLOUNGE, PLPOP and AEGISSKINS.COM.
 
 Can you confirm you'll raise disputes for those 87 transactions and the fees, and how the 9 pending ones get added when they clear? I'd also like to know the timescale and whether a temporary credit is applied while the claim is looked at. I can provide the line-by-line list, my emails to Spinkong and my statements whenever needed.
+
+---
+
+# Reply 3 to Lloyds (confirming Diane's summary)
+
+Context: Diane summarised the complaint back and asked "Is my understanding correct?". Her summary said the 13/09 email asked for "closure and self-exclusion"; it asked for closure only.
+
+Yes, that's correct, thank you Diane. One small accuracy point: my 13/09 email asked Spinkong to close my account with immediate effect. I didn't use the words "self-exclusion", so please record it as a closure request. Everything else is exactly right.
+
+To confirm the figures for the claim: 87 transactions from 21/09/2026 to 19/10/2026 totalling £2,293.15, £45.36 in non-GBP fees on 60 of them, and 9 pending payments of £30.00 (£270.00) to be added when they clear.
+
+What happens next, and what's the timescale?
