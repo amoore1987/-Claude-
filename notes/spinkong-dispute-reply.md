@@ -75,6 +75,6 @@ Yes, I still have access and the account shows as open and active. Nothing has b
 
 Context: Diane asked what gambling product was used, and whether there was any balance, winnings or pending withdrawal on 13/09. Anthony to confirm: product type, balance on 13/09, and whether the EMU (EVENT MANAGEM) / SAMUEL MORLEY credits on the statements are Spinkong payouts.
 
-The account was an online casino account. The products available were slots and casino games, and that's what I used. There was no sports betting.
+The account is an online casino account. The products available are slots and casino games, and that's what I used. There is no sports betting.
 
 When I asked for closure on 13/09 there was no remaining balance, no winnings and no pending withdrawals. The money I deposited was lost on the site. I have never withdrawn anything from Spinkong.
