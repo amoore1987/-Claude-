@@ -58,3 +58,13 @@ Yes, that's correct, thank you Diane. One small accuracy point: my 13/09 email a
 To confirm the figures for the claim: 87 transactions from 21/09/2026 to 19/10/2026 totalling £2,293.15, £45.36 in non-GBP fees on 60 of them, and 9 pending payments of £30.00 (£270.00) to be added when they clear.
 
 What happens next, and what's the timescale?
+
+---
+
+# Reply 4 to Lloyds (auto-replies and account status)
+
+Context: Diane asked whether Spinkong ever acknowledged the emails, even automatically, and whether the account still shows as open. Anthony to verify both (check junk folder; log in and screenshot) before sending.
+
+No. I've checked my inbox and junk folder and there is nothing from Spinkong at all since 13/09, not even an automated acknowledgement. All four emails went to support@spinkong.com, which is the address they publish for support, and none bounced.
+
+Yes, I still have access and the account shows as open and active. Nothing has been restricted. Deposits were still being accepted on 19/10, which is why the nine payments are pending now. I've taken a screenshot of the account status today and can provide it.
