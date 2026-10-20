@@ -108,3 +108,13 @@ My 13/09 email asked Spinkong to close my account with immediate effect. It didn
 My 20/09 email said it explicitly. It stated that because they hadn't closed the account I had been able to keep depositing after I'd asked them to stop me, that every deposit taken after 13/09 was taken after I had told them to stop, and that those funds should never have been accepted. It required permanent closure with no option to reopen and a refund of all deposits from 13/09 onwards. The 24/09 and 06/10 emails chased that same request.
 
 So from 20/09 at the latest, Spinkong had it in writing that I did not want them taking any further money from me, and they carried on taking it until 19/10.
+
+---
+
+# Reply 9 to Lloyds (were payments self-initiated)
+
+Each payment was a deposit I made myself through the Spinkong account. None of them were automatic, recurring or taken without me initiating a new deposit. I'm not disputing them as unauthorised.
+
+The basis of the claim is that Spinkong should not have been able to take them at all. I had asked them in writing to close the account, they didn't, and they kept the account open and accepting deposits. On top of that, each deposit went through under a merchant name that didn't identify it as gambling, which is the only reason the gambling freeze on my account didn't decline them.
+
+(Optional, only if true: My card details were stored on the site, so each deposit took a single tap.)
