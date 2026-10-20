@@ -78,3 +78,13 @@ Context: Diane asked what gambling product was used, and whether there was any b
 The account is an online casino account. The products available are slots and casino games, and that's what I used. There is no sports betting.
 
 When I asked for closure on 13/09 there was no remaining balance, no winnings and no pending withdrawals. The money I deposited was lost on the site. I have never withdrawn anything from Spinkong.
+
+---
+
+# Reply 6 to Lloyds (further attempts and marketing contact)
+
+Context: Diane asked whether Anthony made further attempts to stop gambling after 13/09, and whether Spinkong sent promotional emails, texts or notifications after 13/09. Anthony to check texts and phone notifications before sending.
+
+Yes. I chased the closure request three more times by email to support@spinkong.com, on 20/09, 24/09 and 06/10, each with the subject "Account closure". The 20/09 email also asked for a refund of deposits taken since 13/09, and the 06/10 one made clear I'd had no reply at all. I didn't make a separate responsible-gambling or restriction request through the site, because the site offers no obvious option for that and my emails were already being ignored. On 20/09 I also switched on the gambling freeze on my Lloyds account, which is the other step I took to stop it.
+
+No. I've had nothing from Spinkong at all since 13/09: no reply, no acknowledgement, no promotional emails and no account notifications. The only contact has been one way, from me to them.
