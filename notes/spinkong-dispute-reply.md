@@ -88,3 +88,23 @@ Context: Diane asked whether Anthony made further attempts to stop gambling afte
 Yes. I chased the closure request three more times by email to support@spinkong.com, on 20/09, 24/09 and 06/10, each with the subject "Account closure". The 20/09 email also asked for a refund of deposits taken since 13/09. On 20/09 I also switched on the gambling freeze on my Lloyds account.
 
 On contact from Spinkong, one clarification to my earlier answer. Spinkong has never replied to any of my closure emails. Having now searched my mailbox, they have been sending me promotional emails throughout, including on 25/09, 28/09, 29/09, 02/10 and 06/10, all pushing a "Spin Express" prize promotion, as well as automated deposit confirmations. So they were marketing to me and confirming deposits while ignoring four requests to close the account.
+
+---
+
+# Reply 7 to Lloyds (T&Cs)
+
+Context: Diane asked whether Spinkong's T&Cs cover closure requests. Site is blocked from this environment; Anthony could not find any closure/self-exclusion terms on the site.
+
+I've looked through Spinkong's website for this. I can't find any term that sets out what happens when a customer asks to close their account, or what should happen to deposits taken after that request. There is no closure or self-exclusion process described anywhere I can find, and no option to do it from inside the account. The only route the site gives is contacting support, which is what I did four times by email with no response.
+
+If you've been able to locate their terms on this point I'd be glad to see them, but from the customer's side, the absence of any process is part of the problem.
+
+---
+
+# Reply 8 to Lloyds (did the emails ask them to stop taking deposits)
+
+My 13/09 email asked Spinkong to close my account with immediate effect. It didn't use the words "stop accepting deposits", but closing an account with immediate effect means exactly that: no further deposits can be taken on a closed account.
+
+My 20/09 email said it explicitly. It stated that because they hadn't closed the account I had been able to keep depositing after I'd asked them to stop me, that every deposit taken after 13/09 was taken after I had told them to stop, and that those funds should never have been accepted. It required permanent closure with no option to reopen and a refund of all deposits from 13/09 onwards. The 24/09 and 06/10 emails chased that same request.
+
+So from 20/09 at the latest, Spinkong had it in writing that I did not want them taking any further money from me, and they carried on taking it until 19/10.
