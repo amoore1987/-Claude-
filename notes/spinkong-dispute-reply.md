@@ -81,10 +81,10 @@ When I asked for closure on 13/09 there was no remaining balance, no winnings an
 
 ---
 
-# Reply 6 to Lloyds (further attempts and marketing contact)
+# Reply 6 to Lloyds (further attempts and marketing contact) — FINAL
 
-Context: Diane asked whether Anthony made further attempts to stop gambling after 13/09, and whether Spinkong sent promotional emails, texts or notifications after 13/09. Anthony to check texts and phone notifications before sending.
+Context: Diane asked whether Anthony made further attempts to stop gambling after 13/09, and whether Spinkong sent promotional emails, texts or notifications after 13/09. Mailbox search found Spinkong "Spin Express" promo emails on 25/09, 28/09, 29/09, 02/10, 06/10 plus deposit confirmations, and on 19/10 a deposit confirmation, "Cashout Processing Initiated" and a cancellation notice. Anthony chose not to raise the 19/10 cashout. Earlier reply 4 ("nothing from Spinkong at all") is corrected here.
 
-Yes. I chased the closure request three more times by email to support@spinkong.com, on 20/09, 24/09 and 06/10, each with the subject "Account closure". The 20/09 email also asked for a refund of deposits taken since 13/09, and the 06/10 one made clear I'd had no reply at all. I didn't make a separate responsible-gambling or restriction request through the site, because the site offers no obvious option for that and my emails were already being ignored. On 20/09 I also switched on the gambling freeze on my Lloyds account, which is the other step I took to stop it.
+Yes. I chased the closure request three more times by email to support@spinkong.com, on 20/09, 24/09 and 06/10, each with the subject "Account closure". The 20/09 email also asked for a refund of deposits taken since 13/09. On 20/09 I also switched on the gambling freeze on my Lloyds account.
 
-No. I've had nothing from Spinkong at all since 13/09: no reply, no acknowledgement, no promotional emails and no account notifications. The only contact has been one way, from me to them.
+I need to correct something I said earlier. I told you I'd had nothing from Spinkong since 13/09. I'd only been looking for a reply to my closure emails, and there has never been one. But having searched my mailbox properly, Spinkong has been sending me promotional emails throughout, including on 25/09, 28/09, 29/09, 02/10 and 06/10, all pushing a "Spin Express" prize promotion, plus automated deposit confirmations. So they were marketing to me and confirming my deposits while ignoring four requests to close the account. I'm sorry for the inaccurate answer; I'd rather you had the right picture.
