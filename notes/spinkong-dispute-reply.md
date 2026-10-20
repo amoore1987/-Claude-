@@ -118,3 +118,13 @@ Each payment was a deposit I made myself through the Spinkong account. None of t
 The basis of the claim is that Spinkong should not have been able to take them at all. I had asked them in writing to close the account, they didn't, and they kept the account open and accepting deposits. On top of that, each deposit went through under a merchant name that didn't identify it as gambling, which is the only reason the gambling freeze on my account didn't decline them.
 
 (Optional, only if true: My card details were stored on the site, so each deposit took a single tap.)
+
+---
+
+# Reply 10 to Lloyds (evidence linking merchant names to Spinkong; push for decision)
+
+Yes. Spinkong sends an automated "Deposit Confirmation: Funds Received" email for each deposit, with the amount and time, and I have those in my mailbox. They match the card payments on my statement by date and amount, including the odd-pence foreign currency ones. The Spinkong account also has a deposit history inside the cashier showing every deposit with its date and amount, which lines up the same way. Between the two, every merchant name on my statement can be tied to a Spinkong deposit.
+
+You've said this chat can't take attachments. Tell me where to send them and I'll send the deposit confirmation emails, my four closure emails, the statements and the line-by-line payment list today.
+
+I've now answered everything you've asked over several sessions. I'd like to know what happens next and when. Specifically: are you raising the chargebacks for the 87 payments and the fees, is a temporary credit being applied while that runs, and what is the timescale for a decision? If Lloyds is not going to refund, I'd like that in writing as a final response so I can take it to the Financial Ombudsman.
