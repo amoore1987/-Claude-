@@ -138,3 +138,11 @@ I've been through Spinkong's website looking for this. I couldn't find any secti
 Because the terms don't specify a method for closure requests, I used the only contact route the site gives, which is their support email, support@spinkong.com. That's the same address their own emails direct customers to for queries. Each of my four emails went to that address and none bounced.
 
 I found nothing about a cooling-off period, review period or verification step before an account can be closed. Nothing in the terms or on the site says a closure request will be held, reviewed or delayed, and Spinkong never told me it was being processed. They simply didn't respond.
+
+---
+
+# Reply 12 to Lloyds (Prashil: were credits received on the Spinkong account)
+
+Yes. Each payment was credited to my Spinkong account as a deposit, and Spinkong sent a "Deposit Confirmation: Funds Received" email for them. I'm not saying the credits didn't arrive.
+
+The dispute is that Spinkong should not have been taking the payments at all. I'd asked them in writing on 13/09 to close the account, and again on 20/09, 24/09 and 06/10. They never replied, never closed it, and kept accepting deposits while sending me promotional emails. And every one of those deposits was presented to Lloyds under a merchant name that didn't identify it as gambling, which is why my gambling freeze didn't stop them.
