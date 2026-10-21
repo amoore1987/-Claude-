@@ -158,3 +158,7 @@ Yes, I'm registered with GAMSTOP. I registered around two years ago, in 2024, be
 One correction to the date you have: my first written request to Spinkong to close the account was on 13/09/2026, with further requests on 20/09, 24/09 and 06/10. The gambling freeze on my Lloyds account was switched on on 20/09/2026.
 
 Spinkong is not a UK-licensed operator, which is why GAMSTOP didn't block it. GAMSTOP only covers operators licensed by the Gambling Commission. So at the time of these payments I was registered with GAMSTOP, had a gambling freeze on my card, and had asked the operator in writing to close my account, and the payments still went through because they were coded as something other than gambling.
+
+Closing paragraph added to push for the chargebacks:
+
+You've said the freeze is a basis Lloyds can look at. The freeze is on your own system with a date and time of 20/09/2026 08:36, which Diane confirmed to me earlier in this complaint, and every one of the 87 transactions I've listed is after it. I've now answered every question put to me across four separate chats. I'd like you to raise the chargebacks on those 87 transactions and the £45.36 in fees today, confirm that to me in writing, and tell me whether a temporary credit will be applied while they run. If Lloyds is declining to do that, I need that as a final response so I can refer it to the Financial Ombudsman.
