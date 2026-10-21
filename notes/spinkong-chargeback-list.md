@@ -1,0 +1,95 @@
+# Chargeback list for Lloyds (Prashil) – every Spinkong payment after the gambling freeze
+
+All deposits to Spinkong (online casino) processed under other merchant names. Dates as on Lloyds statement.
+
+1. 21/09/2026 – CNSLTITANS – £30.00
+2. 21/09/2026 – PNBSKNSNW*19307017 – £25.09 (+ £0.75 non-GBP fee)
+3. 21/09/2026 – PNSKNB*193060116 – £20.08 (+ £0.60 non-GBP fee)
+4. 21/09/2026 – PNSKNB*193068937 – £25.09 (+ £0.75 non-GBP fee)
+5. 21/09/2026 – PNSKNB*193069451 – £25.09 (+ £0.75 non-GBP fee)
+6. 21/09/2026 – PNSKNB*193069568 – £25.09 (+ £0.75 non-GBP fee)
+7. 21/09/2026 – PNSKNB*193069670 – £25.09 (+ £0.75 non-GBP fee)
+8. 21/09/2026 – PNSKNB*193069796 – £25.09 (+ £0.75 non-GBP fee)
+9. 21/09/2026 – PNSKNB*193069889 – £25.09 (+ £0.75 non-GBP fee)
+10. 21/09/2026 – PNSKNB*193070299 – £25.09 (+ £0.75 non-GBP fee)
+11. 21/09/2026 – Pikteron ai – £25.00
+12. 21/09/2026 – Pikteron ai – £25.00
+13. 21/09/2026 – Pikteron ai – £25.00
+14. 21/09/2026 – Pikteron ai – £25.00
+15. 21/09/2026 – Pikteron ai – £25.00
+16. 21/09/2026 – qlnart – £25.00
+17. 21/09/2026 – qlnart – £25.00
+18. 21/09/2026 – say esim – £25.00
+19. 21/09/2026 – say esim – £25.00
+20. 21/09/2026 – say esim – £25.00
+21. 23/09/2026 – PNBSKNSNW*19328114 – £30.05 (+ £0.89 non-GBP fee)
+22. 24/09/2026 – PNBSKNSNW*19332687 – £24.98 (+ £0.74 non-GBP fee)
+23. 24/09/2026 – PNBSKNSNW*19332728 – £24.98 (+ £0.74 non-GBP fee)
+24. 24/09/2026 – PNBSKNSNW*19337087 – £24.97 (+ £0.74 non-GBP fee)
+25. 24/09/2026 – PNSKNB*193325524 – £24.98 (+ £0.74 non-GBP fee)
+26. 24/09/2026 – PNSKNB*193325707 – £24.98 (+ £0.74 non-GBP fee)
+27. 24/09/2026 – PNSKNB*193326082 – £24.98 (+ £0.74 non-GBP fee)
+28. 24/09/2026 – PNSKNB*193326442 – £24.98 (+ £0.74 non-GBP fee)
+29. 24/09/2026 – PNSKNB*193326709 – £24.98 (+ £0.74 non-GBP fee)
+30. 24/09/2026 – PNSKNB*193327128 – £24.98 (+ £0.74 non-GBP fee)
+31. 24/09/2026 – PNSKNB*193362094 – £24.97 (+ £0.74 non-GBP fee)
+32. 24/09/2026 – PNSKNB*193365074 – £29.97 (+ £0.89 non-GBP fee)
+33. 24/09/2026 – PNSKNB*193366891 – £19.97 (+ £0.59 non-GBP fee)
+34. 24/09/2026 – PNSKNB*193370440 – £24.97 (+ £0.74 non-GBP fee)
+35. 25/09/2026 – ASTRO UK – £25.01 (+ £0.74 non-GBP fee)
+36. 25/09/2026 – PNBSKNSNW*19337418 – £25.01 (+ £0.74 non-GBP fee)
+37. 25/09/2026 – PNBSKNSNW*19337538 – £25.01 (+ £0.74 non-GBP fee)
+38. 25/09/2026 – PNBSKNSNW*19343767 – £24.99 (+ £0.74 non-GBP fee)
+39. 25/09/2026 – PNSKNB*193437028 – £24.99 (+ £0.74 non-GBP fee)
+40. 25/09/2026 – modelscreator.com – £25.00
+41. 28/09/2026 – PNSKNB*193493581 – £20.00 (+ £0.59 non-GBP fee)
+42. 30/09/2026 – PNBSKNSNW*19391208 – £25.11 (+ £0.75 non-GBP fee)
+43. 30/09/2026 – PNBSKNSNW*19391273 – £25.11 (+ £0.75 non-GBP fee)
+44. 30/09/2026 – PNBSKNSNW*19391455 – £25.11 (+ £0.75 non-GBP fee)
+45. 30/09/2026 – PNSKNB*193913060 – £25.11 (+ £0.75 non-GBP fee)
+46. 30/09/2026 – PNSKNB*193917500 – £25.11 (+ £0.75 non-GBP fee)
+47. 02/10/2026 – PNSKNB*194081055 – £25.16 (+ £0.75 non-GBP fee)
+48. 05/10/2026 – PNBSKNSNW*19441881 – £25.11 (+ £0.75 non-GBP fee)
+49. 05/10/2026 – PNSKNB*194419191 – £25.11 (+ £0.75 non-GBP fee)
+50. 05/10/2026 – PNSKNB*194419719 – £25.10 (+ £0.75 non-GBP fee)
+51. 05/10/2026 – PNSKNB*194420067 – £25.10 (+ £0.75 non-GBP fee)
+52. 12/10/2026 – PNBSKNSNW*19489739 – £25.06 (+ £0.74 non-GBP fee)
+53. 12/10/2026 – PNBSKNSNW*19497111 – £25.08 (+ £0.74 non-GBP fee)
+54. 12/10/2026 – PNSKNB*194901183 – £25.06 (+ £0.74 non-GBP fee)
+55. 13/10/2026 – PNBSKNSNW*19516906 – £25.09 (+ £0.75 non-GBP fee)
+56. 13/10/2026 – PNBSKNSNW*19516944 – £25.09 (+ £0.75 non-GBP fee)
+57. 13/10/2026 – PNCRFTLNX*19489710 – £25.06 (+ £0.74 non-GBP fee)
+58. 14/10/2026 – PNBSKNSNW*19532250 – £25.07 (+ £0.74 non-GBP fee)
+59. 14/10/2026 – PNBSKNSNW*19532287 – £25.07 (+ £0.74 non-GBP fee)
+60. 14/10/2026 – PNBSKNSNW*19533246 – £25.07 (+ £0.74 non-GBP fee)
+61. 14/10/2026 – PNBSKNSNW*19533554 – £25.07 (+ £0.74 non-GBP fee)
+62. 14/10/2026 – PNBSKNSNW*19537025 – £30.08 (+ £0.89 non-GBP fee)
+63. 14/10/2026 – PNBSKNSNW*19538018 – £30.03 (+ £0.89 non-GBP fee)
+64. 14/10/2026 – PNCRFTLNX*19533609 – £25.07 (+ £0.74 non-GBP fee)
+65. 14/10/2026 – PNCRFTLNX*19535748 – £25.07 (+ £0.74 non-GBP fee)
+66. 14/10/2026 – PNCRFTLNX*19535776 – £30.09 (+ £0.89 non-GBP fee)
+67. 14/10/2026 – PNCRFTLNX*19535874 – £25.07 (+ £0.74 non-GBP fee)
+68. 14/10/2026 – PNCRFTLNX*19536324 – £25.07 (+ £0.74 non-GBP fee)
+69. 14/10/2026 – PNCRFTLNX*19537700 – £30.08 (+ £0.89 non-GBP fee)
+70. 14/10/2026 – PNCRFTLNX*19538043 – £30.03 (+ £0.89 non-GBP fee)
+71. 14/10/2026 – PNSKNB*195323921 – £25.07 (+ £0.74 non-GBP fee)
+72. 14/10/2026 – PNSKNB*195363506 – £30.09 (+ £0.89 non-GBP fee)
+73. 15/10/2026 – hword*195381302 – £30.00
+74. 15/10/2026 – hword*195422144 – £30.00
+75. 15/10/2026 – hword*195478013 – £40.00
+76. 15/10/2026 – hword*195481637 – £30.00
+77. 15/10/2026 – royallounge*195481 – £30.00
+78. 15/10/2026 – royallounge*195483 – £40.00
+79. 16/10/2026 – PLPOP – £30.00
+80. 16/10/2026 – hword*195572608 – £25.00
+81. 19/10/2026 – PLPOP – £30.00
+82. 19/10/2026 – PLPOP – £30.00
+83. 19/10/2026 – PLPOP – £30.00
+84. 19/10/2026 – PLPOP – £25.00
+85. 19/10/2026 – PLPOP – £30.00
+86. 19/10/2026 – PLPOP – £30.00
+87. 19/10/2026 – PLPOP – £30.00
+
+Total: 87 transactions, £2293.15, plus £45.36 non-GBP transaction fees
+
+Pending when statement produced, to be added once posted: AEGISSKINS.COM £30.00, ROYALLOUNGE £30.00, further PLPOP £30.00 payments.
