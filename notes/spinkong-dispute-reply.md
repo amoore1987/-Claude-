@@ -153,7 +153,7 @@ The dispute is that Spinkong should not have been taking the payments at all. I'
 
 Context: Prashil says the closure request alone isn't a chargeback basis, but the gambling freeze may be; asked whether Anthony was on GAMSTOP and from when. Anthony to fill in the GAMSTOP date and period from the confirmation email or gamstop.co.uk status check.
 
-Yes, I'm registered with GAMSTOP. My exclusion was applied on [date] for [period] and is still active.
+Yes, I'm registered with GAMSTOP. I registered around two years ago, in 2024, because I recognised I had a problem with gambling. I don't have the exact date to hand but GAMSTOP will have it on record and I can confirm it if you need it.
 
 One correction to the date you have: my first written request to Spinkong to close the account was on 13/09/2026, with further requests on 20/09, 24/09 and 06/10. The gambling freeze on my Lloyds account was switched on on 20/09/2026.
 
