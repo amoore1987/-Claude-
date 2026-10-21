@@ -162,3 +162,17 @@ Spinkong is not a UK-licensed operator, which is why GAMSTOP didn't block it. GA
 Closing paragraph added to push for the chargebacks:
 
 You've said the freeze is a basis Lloyds can look at. The freeze is on your own system with a date and time of 20/09/2026 08:36, which Diane confirmed to me earlier in this complaint, and every one of the 87 transactions I've listed is after it. I've now answered every question put to me across four separate chats. I'd like you to raise the chargebacks on those 87 transactions and the £45.36 in fees today, confirm that to me in writing, and tell me whether a temporary credit will be applied while they run. If Lloyds is declining to do that, I need that as a final response so I can refer it to the Financial Ombudsman.
+
+---
+
+# OUTCOME 21/10/2026
+
+Lloyds case reference DI-5619277. Chargebacks raised on the 87 post-freeze transactions; provisional refund paid 21/10/2026. Refund can be reversed if merchant provides evidence. Expected amount £2,293.15 + £45.36 fees.
+
+# Reply 14 (log formal complaint)
+
+Yes, please log a formal complaint. The complaint is that gambling transactions were processed on my account while the gambling freeze was active, because the merchant presented them under non-gambling names, and that Lloyds should report that merchant coding to the card scheme. Please also confirm in writing the refund amount being paid today and the transactions it covers, so I can check it against my list. If the merchant contests the chargeback, I'd like to be told what evidence they provide and given the chance to respond before any refund is reversed.
+
+# Still to do
+- Letter to Spinkong for the 33 deposits 14–16 Sep (£830.00) that fall before the Lloyds freeze.
+- Complaint to Spinkong's licensing regulator (licence details still to be confirmed from site footer).
