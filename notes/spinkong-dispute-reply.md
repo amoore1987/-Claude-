@@ -128,3 +128,13 @@ Yes. Spinkong sends an automated "Deposit Confirmation: Funds Received" email fo
 You've said this chat can't take attachments. Tell me where to send them and I'll send the deposit confirmation emails, my four closure emails, the statements and the line-by-line payment list today.
 
 I've now answered everything you've asked over several sessions. I'd like to know what happens next and when. Specifically: are you raising the chargebacks for the 87 payments and the fees, is a temporary credit being applied while that runs, and what is the timescale for a decision? If Lloyds is not going to refund, I'd like that in writing as a final response so I can take it to the Financial Ombudsman.
+
+---
+
+# Reply 11 to Lloyds (Prashil: T&C sections, contact method, cooling-off)
+
+I've been through Spinkong's website looking for this. I couldn't find any section in their terms covering account closure, suspension, responsible gambling, vulnerable customers or self-exclusion, so there is no wording I can give you. There is no closure or self-exclusion option inside the account either.
+
+Because the terms don't specify a method for closure requests, I used the only contact route the site gives, which is their support email, support@spinkong.com. That's the same address their own emails direct customers to for queries. Each of my four emails went to that address and none bounced.
+
+I found nothing about a cooling-off period, review period or verification step before an account can be closed. Nothing in the terms or on the site says a closure request will be held, reviewed or delayed, and Spinkong never told me it was being processed. They simply didn't respond.
