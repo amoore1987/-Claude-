@@ -146,3 +146,15 @@ I found nothing about a cooling-off period, review period or verification step b
 Yes. Each payment was credited to my Spinkong account as a deposit, and Spinkong sent a "Deposit Confirmation: Funds Received" email for them. I'm not saying the credits didn't arrive.
 
 The dispute is that Spinkong should not have been taking the payments at all. I'd asked them in writing on 13/09 to close the account, and again on 20/09, 24/09 and 06/10. They never replied, never closed it, and kept accepting deposits while sending me promotional emails. And every one of those deposits was presented to Lloyds under a merchant name that didn't identify it as gambling, which is why my gambling freeze didn't stop them.
+
+---
+
+# Reply 13 to Lloyds (Prashil: GAMSTOP)
+
+Context: Prashil says the closure request alone isn't a chargeback basis, but the gambling freeze may be; asked whether Anthony was on GAMSTOP and from when. Anthony to fill in the GAMSTOP date and period from the confirmation email or gamstop.co.uk status check.
+
+Yes, I'm registered with GAMSTOP. My exclusion was applied on [date] for [period] and is still active.
+
+One correction to the date you have: my first written request to Spinkong to close the account was on 13/09/2026, with further requests on 20/09, 24/09 and 06/10. The gambling freeze on my Lloyds account was switched on on 20/09/2026.
+
+Spinkong is not a UK-licensed operator, which is why GAMSTOP didn't block it. GAMSTOP only covers operators licensed by the Gambling Commission. So at the time of these payments I was registered with GAMSTOP, had a gambling freeze on my card, and had asked the operator in writing to close my account, and the payments still went through because they were coded as something other than gambling.
