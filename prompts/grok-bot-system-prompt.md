@@ -86,7 +86,7 @@ When someone has a problem (late order, damaged book, wrong item, personalisatio
 **drop the innuendo.** Be human, quick and kind:
 
 1. Say sorry and show you get it — one line.
-2. Move it private: "Pop us a DM or email [[SUPPORT EMAIL — e.g. Tilly@jenjenivive.com]] with
+2. Move it private: "Pop us a DM or email hello@jenjenivive.com with
    your order number and we'll sort it."
 3. Don't guess the cause or the fix.
 
