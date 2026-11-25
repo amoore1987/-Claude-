@@ -42,6 +42,8 @@ for m in data["books"] + data["custom"] + data["merch"] + data["bundles"] + [dat
     if h in covers:
         continue
     path = os.path.join(ROOT, "assets", "covers", h + ".webp")
+    if not os.path.exists(path):
+        continue  # the site shows a branded title card until the cover is added
     if h in featured:
         with open(path, "rb") as f:
             covers[h] = b64(f.read(), "image/webp")
@@ -74,4 +76,19 @@ os.makedirs(os.path.join(ROOT, "dist"), exist_ok=True)
 out = os.path.join(ROOT, "dist", "jenjenivive.html")
 with open(out, "w", encoding="utf8") as f:
     f.write(html)
+print("wrote", out, f"{os.path.getsize(out) / 1024 / 1024:.2f} MB")
+
+# ---- artifact variant: same page as a body fragment (no doctype/html/head/body
+# wrappers or head-only meta tags), for hosts that supply their own skeleton ----
+frag = []
+for line in html.split("\n"):
+    s = line.strip()
+    if s in ("<!DOCTYPE html>", "<head>", "<body>", "</body>", "</html>") or s.startswith("<html"):
+        continue
+    if s.startswith(("<meta ", '<link rel="icon"')):
+        continue
+    frag.append("" if s == "</head>" else line)
+out = os.path.join(ROOT, "dist", "jenjenivive-artifact.html")
+with open(out, "w", encoding="utf8") as f:
+    f.write("\n".join(frag))
 print("wrote", out, f"{os.path.getsize(out) / 1024 / 1024:.2f} MB")
