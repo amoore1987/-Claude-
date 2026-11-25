@@ -2,7 +2,7 @@
 
 A fluid, animation-heavy single-page redesign of [jenjenivive.com](https://jenjenivive.com), built
 from the official **JJ Brand Guidelines** (palette, fonts, tone of voice) and the live product
-catalogue (154 products, 114 books).
+catalogue (169 products, 124 books, refreshed from Shopify 2026-11-25).
 
 > *Cheeky humour for unserious adults.*
 
@@ -13,11 +13,20 @@ catalogue (154 products, 114 books).
 | `index.html` | The site — one page, nine animated sections |
 | `css/style.css` | Design system + all animation (brand palette, sticker/blob/squiggle language) |
 | `js/main.js` | Vanilla JS: scroll reveals, drag shelf, library filters, slot machine, confetti, parallax |
-| `js/books-data.js` | Generated product data (titles, prices, handles) scraped from the live Shopify catalogue |
+| `js/books-data.js` | Generated product data (titles, prices, handles). Rebuild with `build/refresh_catalogue.py` |
+| `data/shopify-snapshot.json` | Active products pulled from Shopify; the input to `refresh_catalogue.py` |
 | `assets/covers/` | All 154 product images (640px webp) |
 | `assets/brand/` | Logo roundel + wordmark cut out from the brand guidelines PDF |
 | `assets/fonts/` | Montserrat, Libre Franklin, Borel (woff2, latin subsets) |
-| `build/inline_artifact.py` | Builds `dist/jenjenivive.html`, a fully self-contained single file |
+| `build/inline_artifact.py` | Builds `dist/jenjenivive.html` (self-contained single file) and `dist/jenjenivive-artifact.html` (same, as a body fragment) |
+
+## Refresh the catalogue
+
+1. Pull active products from Shopify into `data/shopify-snapshot.json` (handle, title, type, price; oldest first).
+2. `python3 build/refresh_catalogue.py` rewrites `js/books-data.js`.
+3. `python3 shorts/build_catalogue.py && python3 build/inline_artifact.py` regenerates everything downstream.
+
+Products without a file in `assets/covers/` show a branded title card until the cover is added.
 
 ## Run it
 

@@ -11,6 +11,38 @@
     // single-file builds embed covers as data URIs in window.JJ_IMG
     return (window.JJ_IMG && window.JJ_IMG[h]) || 'assets/covers/' + h + '.webp';
   }
+  // Until a product's cover is added to assets/covers/, show a branded title
+  // card instead of a broken image (new titles land in Shopify before the repo).
+  function titleCard(h) {
+    var b = byHandle[h], t = b ? b.t : h.replace(/-/g, ' ');
+    var words = t.split(/\s+/), lines = [], line = '';
+    words.forEach(function (w) {
+      if ((line + ' ' + w).trim().length > 14 && line) { lines.push(line); line = w; }
+      else line = (line + ' ' + w).trim();
+    });
+    if (line) lines.push(line);
+    lines = lines.slice(0, 6);
+    var y0 = 320 - (lines.length - 1) * 30;
+    var text = lines.map(function (l, i) {
+      return '<text x="320" y="' + (y0 + i * 60) + '">' + esc(l) + '</text>';
+    }).join('');
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">' +
+      '<rect width="640" height="640" fill="#FAB3F8"/>' +
+      '<rect x="28" y="28" width="584" height="584" rx="36" fill="none" stroke="#CD3A8E" stroke-width="8"/>' +
+      '<g fill="#CD3A8E" font-family="Libre Franklin,Montserrat,sans-serif" font-weight="900" font-size="52" text-anchor="middle">' +
+      text + '</g><text x="320" y="575" fill="#CD3A8E" font-family="Montserrat,sans-serif" font-weight="700" ' +
+      'font-size="24" text-anchor="middle" letter-spacing="4">JEN JENIVIVE</text></svg>';
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+  document.addEventListener('error', function (e) {
+    var img = e.target;
+    if (!img || img.tagName !== 'IMG' || img.dataset.fallback) return;
+    var m = /covers\/([^\/]+)\.webp/.exec(img.getAttribute('src') || '');
+    if (!m) return;
+    img.dataset.fallback = '1';
+    img.src = titleCard(m[1]);
+  }, true);
+
   function productUrl(h) { return 'https://jenjenivive.com/products/' + h; }
   function gbp(p) { return p ? '£' + p : ''; }
   function el(tag, cls, html) {
